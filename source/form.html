@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page__body">
+
+    <header class="main-header">
+      <a class="main-header__logo">
+        <svg class="main-header__logo-image" width="34" height="38"><use xlink:href="img/icons.svg#logo-icon"></use></svg>
+        <span class="visually-hidden">Логотип магазина CAT ENERGY.</span>
+      </a>
+      <svg class="main-header__logo-text" width="101" height="18"><use xlink:href="img/icons.svg#logo-text"></use></svg>
+      <button class="main-header__button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="main-navigation">
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="index.html">главная</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="catalog.html">каталог продукции</a>
+            </li>
+            <li class="main-navigation__item main-navigation__item--current">
+              <a class="main-navigation__link" href="form.html">подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="form form-main">
+      <section class="section">
+        <h1 class="section-title">Подбор программы</h1>
+        <form action="post">
+          <fieldset class="form-wrapper">
+            <legend class="form-text">Заполните анкету, и мы подберем программу питания для вашего кота</legend>
+            <!--  -->
+            <label class="form-label" for="name">ИМЯ:<sup>*</sup></label>
+            <input class="form-input" type="text" id="name" placeholder="барсик" required>
+            <!--  -->
+            <label class="form-label" for="weight">Вес (кг):<sup>*</sup></label>
+            <input class="form-input" type="text" id="weight" placeholder="7" required>
+            <!--  -->
+            <label class="form-label" for="age">Возраст (лет):</label>
+            <input class="form-input" type="text" id="age" placeholder="7">
+            <!--  -->
+
+            <div class="form-inputs-wrapper">
+              <!--  -->
+              <input class="form-input-radio" type="radio" id="weight-loss" value="weight-loss">
+              <label class="form-label" for="weight-loss">похудение</label>
+              <!--  -->
+              <input class="form-input-radio" type="radio" id="weight-gain" value="weight-gain">
+              <label class="form-label" for="weight-gain">Набор массы</label>
+              <!--  -->
+              <input class="form-input-radio" type="radio" id="dont-know" value="dont-know">
+              <label class="form-label" for="dont-know">Не знаю (Нужен ваш совет)</label>
+              <!--  -->
+
+              <!--  -->
+              <label class="form-group filter-control">
+                <input class="control-input visually-hidden" type="radio" name="form-contacts" value="weight-loss" checked>
+                <span class="control-mark control-mark-radio"></span>
+                <span class="control-label">похудение</span>
+              </label>
+              <!--  -->
+              <label class="form-group filter-control">
+                <input class="control-input visually-hidden" type="radio" name="fform-contacts" value="weight-gain">
+                <span class="control-mark control-mark-radio"></span>
+                <span class="control-label">Набор массы</span>
+              </label>
+              <!--  -->
+              <label class="form-group filter-control">
+                <input class="control-input visually-hidden" type="radio" name="form-contacts" value="dont-know">
+                <span class="control-mark control-mark-radio"></span>
+                <span class="control-label">Не знаю (Нужен ваш совет)</span>
+              </label>
+              <!--  -->
+            </div>
+          </fieldset>
+          <fieldset class="form-wrapper">
+            <legend class="form-title">Контактные данные(владельца кота)</legend>
+            <label class="form-label" for="email">E-mail:<sup>*</sup></label>
+            <input class="form-input" type="email" id="email" pattern="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="kuklachev@gmail.com" required>
+            <!--  -->
+            <label class="form-label" for="tel">Телефон:<sup>*</sup></label>
+            <input class="form-input" type="tel" id="tel"  pattern="\+?[0-9\s\-\(\)]+" placeholder="8 (960) 900-60-90" required>
+          </fieldset>
+          <fieldset class="form-wrapper">
+            <legend class="form-title">Комментарий</legend>
+            <label class="visually-hidden" for="comments">Расскажите обо всех повадках кота</label>
+            <textarea class="form-input-textarea" id="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="form-wrapper">
+            <legend class="form-title">Дополнительно</legend>
+            <!--  -->
+            <label class="form-group filter-control">
+              <input class="control-input visually-hidden" type="checkbox" name="filter-filler" value="sweetener" checked>
+              <span class="control-mark control-mark-check"></span>
+              <span class="control-label">сахарозаменитель</span>
+            </label>
+            <!--  -->
+            <label class="form-group filter-control">
+              <input class="control-input visually-hidden" type="checkbox" name="filter-filler" value="water">
+              <span class="control-mark control-mark-check"></span>
+              <span class="control-label">питьевая вода</span>
+            </label>
+            <!--  -->
+            <label class="form-group filter-control">
+              <input class="control-input visually-hidden" type="checkbox" name="filter-filler" value="milk">
+              <span class="control-mark control-mark-check"></span>
+              <span class="control-label">молоко</span>
+            </label>
+            <!--  -->
+            <label class="form-group filter-control">
+              <input class="control-input visually-hidden" type="checkbox" name="filter-filler" value="vitamins">
+              <span class="control-mark control-mark-check"></span>
+              <span class="control-label">витамины</span>
+            </label>
+            <!--  -->
+          </fieldset>
+          <footer class="form-footer">
+            <button class="button" type="submit">отправить заявку</button>
+            <p><sup>*</sup> — Обязательные поля</p>
+          </footer>
+        </form>
+
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="address section">
+        <h2 class="address__title">приглашаем к сотрудничеству дилеров!</h2>
+        <address class="address__text"><span class="visually-hidden">Адрес магазина:</span>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <span class="visually-hidden">Магазин на карте.</span>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6509465402557!2d30.322500229360966!3d59.93871650000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2str!4v1669665757322!5m2!1sru!2str" style="border:0; width: 320px; height: 362px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      <svg class="footer__icon-text" width="128" height="24"><use xlink:href="img/icons.svg#footer-logo-text"></use></svg>
+      <div class="footer__socials-wrapper">
+        <svg class="footer__social-icon" width="28" height="22"><use xlink:href="img/icons.svg#logo-vkontakte"></use></svg>
+        <svg class="footer__social-icon" width="28" height="22"><use xlink:href="img/icons.svg#logo-youtube"></use></svg>
+        <svg class="footer__social-icon" width="28" height="22"><use xlink:href="img/icons.svg#logo-telegram"></use></svg>
+      </div>
+      <div class="footer__academy-logo-wrapper">
+        <svg class="footer__academy-logo-text" width="113" height="19"><use xlink:href="img/icons.svg#logo-academy-text"></use></svg>
+        <svg class="footer__academy-logo-icon" width="27" height="34"><use xlink:href="img/icons.svg#logo-academy-icon"></use></svg>
+      </div>
+    </footer>
+
+  </body>
+</html>
