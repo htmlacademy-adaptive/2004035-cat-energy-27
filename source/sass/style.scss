@@ -1,1 +1,13 @@
-// Начните писать стили здесь
+@use "fonts";
+@use "global";
+@use "./Header/header";
+@use "./Header/navigation";
+@use "./Main/main-index";
+@use "./Main/hero-block";
+@use "./Components/button";
+@use "./Main/programs.scss";
+@use "./Main/work.scss";
+@use "./Main/live-example.scss";
+@use "./Footer/address.scss";
+@use "./Footer/location.scss";
+@use "./Footer/footer.scss";

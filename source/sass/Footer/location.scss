@@ -1,0 +1,31 @@
+@import "../variable";
+
+.location {
+  min-height: 362px;
+  overflow: hidden;
+  background-image: url("../../img/map.png");
+  background-position: center;
+  background-size: cover;
+  background-color: $white;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 50px;
+    height: 53px;
+    position: absolute;
+    background-image: url("../../img/map-pin.png");
+    background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+  }
+}
+
+// .location__map
+
+// .map {
+//   width: 1200px;
+//   height: 1200px;
+// }
+

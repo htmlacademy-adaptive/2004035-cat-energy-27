@@ -1,0 +1,57 @@
+@import "variable";
+
+.page__body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// .section {
+//   &--darker {
+
+//   }
+// }
+
+.container {
+  margin: 0 auto;
+  width: 280px;
+
+  @media (min-width: 768px) {
+    width: 708px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 1220px;
+  }
+}
+
+.section-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $black;
+  margin: 0;
+}
+
+.section {
+  background-color: $white;
+
+  &--darker {
+    background-color: $section-dark;
+  }
+}

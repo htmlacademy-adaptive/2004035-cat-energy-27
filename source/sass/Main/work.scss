@@ -1,0 +1,60 @@
+@import "../mixins";
+@import "../variable";
+
+.works {
+  padding: 0 20px;
+  padding-top: 20px;
+  padding-bottom: 49px;
+}
+
+.work-list {
+  @include reset-list;
+  margin-top: 40px;
+}
+
+.work-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.work-item__rect {
+  min-width: 60px;
+  min-height: 60px;
+  background-color: $basic-green;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+
+  &--leaf {
+    background-image: url("../../img/icon-leaf.svg");
+  }
+
+  &--powder {
+    background-image: url("../../img/icon-powder.svg");
+  }
+
+  &--eat {
+    background-image: url("../../img/icon-eat.svg");
+  }
+
+  &--scales {
+    background-image: url("../../img/icon-scales.svg");
+  }
+}
+
+.work-item__text {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-dark-grey;
+
+  margin: 0;
+  width: fit-content;
+}
