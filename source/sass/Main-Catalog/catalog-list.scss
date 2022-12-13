@@ -1,0 +1,18 @@
+@import "../variable";
+@import "../mixins";
+
+.catalog__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $black;
+  margin: 0;
+  padding: 27px 0 41px;
+  border-top: 1px solid #d9d9d9;
+}
+
+.card-list {
+  @include reset-list;
+}
