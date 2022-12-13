@@ -11,8 +11,14 @@
   color: $white;
   text-decoration: none;
   background-color: $basic-green;
-  width: fill-available;
+  min-width: 100px;
   text-align: center;
+  box-sizing: border-box;
+
+  &--grey {
+    color: $special-dark-grey;
+    background-color: $basic-grey;
+  }
 
   @media (min-width: 768px) {
     padding: 14px 26px;
