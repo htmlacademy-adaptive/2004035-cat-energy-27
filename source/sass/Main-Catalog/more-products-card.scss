@@ -1,0 +1,67 @@
+@import "../variable";
+
+.more-products-card {
+  border-top: 1px solid #cdcdcd;
+
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.more-products-card__title {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+  margin-bottom: 13px;
+}
+
+.more-products-card__info {
+  padding: 0;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.more-products-card-table {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special-dark-grey;
+}
+
+.more-products-card-table__info-name {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $special-dark-grey;
+}
+
+.more-products-card-table__info-price {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: $special-dark-grey;
+  text-align: end;
+}
+
+.more-products-card__button {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 109px;
+  // box-sizing: border-box;
+  // margin-top: 13px;
+}

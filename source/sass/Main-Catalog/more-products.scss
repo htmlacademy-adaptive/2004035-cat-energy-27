@@ -1,0 +1,24 @@
+@import "../variable";
+@import "../mixins";
+
+.more-products {
+  padding: 25px 0 0;
+}
+
+.more-products__title {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 36px;
+}
+
+.more-products__list {
+  @include reset-list;
+}
+
+.more-products__item {
+  padding: 13px 0 19px;
+}
