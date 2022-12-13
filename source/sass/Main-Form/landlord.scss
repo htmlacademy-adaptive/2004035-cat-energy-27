@@ -1,0 +1,33 @@
+@import "../variable";
+
+.form-wrapper__landlord {
+  padding: 26px 0 24px;
+  box-sizing: border-box;
+}
+
+.form-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.form-input__with-icon {
+  padding-right: 40px;
+  position: relative;
+
+  background-position: center right 15px;
+  background-repeat: no-repeat;
+
+  &--email {
+    background-image: url("../../img/input-icon-email.svg");
+  }
+
+  &--phone {
+    background-image: url("../../img/input-icon-phone.svg");
+  }
+}

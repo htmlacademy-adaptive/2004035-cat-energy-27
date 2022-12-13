@@ -1,0 +1,25 @@
+@import "../variable";
+
+.form {
+  padding: 0 0 32px;
+}
+
+.form-main__title {
+  margin: 27px 0 37px;
+}
+
+.form-main__text {
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form-wrapper {
+  border: none;
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,27 @@
+@import "../variable";
+
+.form-wrapper__comments {
+  padding: 0 0 23px;
+}
+
+.form-input-textarea {
+  border: 1px solid #e7e7e7;
+  width: 100%;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  height: 150px;
+  resize: none;
+}
+
+.form-input-textarea__font {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-grey;
+
+  &::placeholder {
+    text-transform: uppercase;
+  }
+}

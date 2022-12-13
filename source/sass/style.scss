@@ -17,6 +17,14 @@
 @use "./Main-Catalog/more-products.scss";
 @use "./Main-Catalog/more-products-card.scss";
 @use "./Main-Catalog/promo.scss";
+// Main-Form
+@use "./Main-Form/form.scss";
+@use "./Main-Form/name.scss";
+@use "./Main-Form/goal.scss";
+@use "./Main-Form/landlord.scss";
+@use "./Main-Form/comments.scss";
+@use "./Main-Form/other.scss";
+@use "./Main-Form/form-footer.scss";
 // Footer
 @use "./Footer/address.scss";
 @use "./Footer/location.scss";

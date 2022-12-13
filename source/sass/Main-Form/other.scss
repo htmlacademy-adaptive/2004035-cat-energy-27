@@ -1,0 +1,48 @@
+@import "../variable";
+
+.form-wrapper__other {
+  padding: 0 0 34px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.filter-control__check {
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.control-mark-check {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  margin-right: 15px;
+  position: relative;
+}
+
+.control-label {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey-2;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark-check {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../../img/check-checked.svg");
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+  }
+}
