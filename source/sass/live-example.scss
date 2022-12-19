@@ -1,5 +1,5 @@
-@import "../variable";
-@import "../mixins";
+@import "variable";
+@import "mixins";
 
 .live-example {
   padding: 0 20px;
@@ -67,69 +67,4 @@
   color: $black;
   text-transform: uppercase;
   text-align: center;
-}
-
-.live-example__slider {
-  padding: 20px 0 40px;
-  min-height: 256px;
-}
-
-.live-example__slider--wrapper {
-  display: flex;
-  position: relative;
-}
-
-.slider-before {
-  width: 50%;
-  overflow: hidden;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(2px, -50%);
-    width: 4px;
-    height: 100%;
-    border: none;
-    border-radius: 2px;
-    background-color: #666666;
-    z-index: 1;
-  }
-}
-
-.slider-after {
-  width: 50%;
-  overflow: hidden;
-  transform: scale(-1, 1);
-}
-
-.slider-after__image {
-  transform: scale(-1, 1);
-}
-
-.live-example__slider-curtine {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0;
-  background-color: $white;
-  border: 2px solid #666666;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  z-index: 1;
-
-  &::before {
-    content: "";
-    background-image: url("../../img/sleder-buttontr.svg");
-    background-repeat: no-repeat;
-    width: 24px;
-    height: 18px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 }

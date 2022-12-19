@@ -1,6 +1,6 @@
-@import "../variable";
+@import "variable";
 
-.form-wrapper__other {
+.form-wrapper--other {
   padding: 0 0 34px;
 }
 
@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.filter-control__check {
+.filter-control--check {
   &:not(:last-child) {
     margin-bottom: 13px;
   }

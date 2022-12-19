@@ -1,6 +1,6 @@
-@import "../variable";
+@import "variable";
 
-.form-wrapper__goal {
+.form-wrapper--goal {
   padding: 22px 0 19px;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-.filter-control__radio {
+.filter-control--radio {
   &:not(:last-child) {
     margin-bottom: 13px;
   }

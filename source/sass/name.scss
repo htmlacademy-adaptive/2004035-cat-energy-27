@@ -1,12 +1,11 @@
-@import "../variable";
+@import "variable";
 
-.form-wrapper__name {
+.form-wrapper--name {
   padding: 39px 0 24px;
 }
 
-.form-value--wrapper {
+.form-value {
   display: flex;
-  // display: block;
   align-items: center;
   justify-content: end;
 

@@ -1,6 +1,6 @@
-@import "../variable";
+@import "variable";
 
-.form-wrapper__comments {
+.form-wrapper--comments {
   padding: 0 0 23px;
 }
 
@@ -11,9 +11,6 @@
   box-sizing: border-box;
   height: 150px;
   resize: none;
-}
-
-.form-input-textarea__font {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
