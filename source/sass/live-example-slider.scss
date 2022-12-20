@@ -10,7 +10,7 @@
   position: relative;
 }
 
-.slider-before {
+.live-example__slider-before {
   width: 50%;
   overflow: hidden;
 
@@ -29,13 +29,13 @@
   }
 }
 
-.slider-after {
+.live-example__slider-after {
   width: 50%;
   overflow: hidden;
   transform: scale(-1, 1);
 }
 
-.slider-after__image {
+.live-example__slider-after__image {
   transform: scale(-1, 1);
 }
 

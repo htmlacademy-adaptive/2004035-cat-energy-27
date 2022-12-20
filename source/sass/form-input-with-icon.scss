@@ -1,0 +1,15 @@
+.form-input-with-icon {
+  padding-right: 40px;
+  position: relative;
+
+  background-position: center right 15px;
+  background-repeat: no-repeat;
+
+  &--email {
+    background-image: url("../img/input-icon-email.svg");
+  }
+
+  &--phone {
+    background-image: url("../img/input-icon-phone.svg");
+  }
+}
