@@ -516,11 +516,11 @@
   position: relative;
 }
 
-.live-example__slider-before {
+.live-example__cat-before-food {
   width: 50%;
   overflow: hidden;
 }
-.live-example__slider-before::before {
+.live-example__cat-before-food::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -534,13 +534,20 @@
   z-index: 1;
 }
 
-.live-example__slider-after {
+.live-example__cat-after-food {
   width: 50%;
   overflow: hidden;
   transform: scale(-1, 1);
 }
 
-.live-example__slider-after__image {
+.live-example__cat-before-food-image {
+  height: 100%;
+}
+
+.live-example__cat-after-food-image {
+  height: 100%;
+}
+.live-example__cat-after-food-image--mirrored {
   transform: scale(-1, 1);
 }
 
@@ -864,17 +871,70 @@
   margin: 0;
 }
 
+.form-title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
 .form-wrapper--name {
   padding: 39px 0 24px;
 }
-
-.form-value {
-  display: flex;
-  align-items: center;
-  justify-content: end;
+.form-wrapper--landlord {
+  padding: 26px 0 24px;
+  box-sizing: border-box;
 }
-.form-value:not(:last-child) {
-  margin-bottom: 14px;
+.form-wrapper--comments {
+  padding: 0 0 23px;
+}
+.form-wrapper--goal {
+  padding: 22px 0 19px;
+  display: flex;
+  flex-direction: column;
+}
+.form-wrapper--other {
+  padding: 0 0 34px;
+}
+
+.form-input {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  padding: 14px 16px 13px;
+  border: 1px solid #e7e7e7;
+  border-radius: 0;
+  min-width: 173px;
+  box-sizing: border-box;
+  flex-grow: 1;
+}
+.form-input::placeholder {
+  text-transform: uppercase;
+}
+
+.form-input__textarea {
+  border: 1px solid #e7e7e7;
+  width: 100%;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  height: 150px;
+  resize: none;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+.form-input__textarea::placeholder {
+  text-transform: uppercase;
 }
 
 .form-label {
@@ -892,40 +952,45 @@
   width: 94px;
 }
 
-.form-input {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: #444444;
-  padding: 14px 20px 13px;
-  border: 1px solid #e7e7e7;
-  border-radius: 0;
-  min-width: 173px;
-  box-sizing: border-box;
-  flex-grow: 1;
-}
-.form-input::placeholder {
-  text-transform: uppercase;
-}
-
-.form-wrapper--goal {
-  padding: 22px 0 19px;
-  display: flex;
-  flex-direction: column;
-}
-
 .form-group {
   display: flex;
   align-items: center;
 }
 
-.filter-control--radio:not(:last-child) {
+.form-value {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.form-value:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.filter-control--check:not(:last-child), .filter-control--radio:not(:last-child) {
   margin-bottom: 13px;
 }
 
-.control-mark-radio {
+.control-mark--check {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  margin-right: 15px;
+  position: relative;
+}
+
+.control-input[type=checkbox]:checked + .control-mark--check::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../../img/check-checked.svg");
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 26px;
+}
+
+.control-mark--radio {
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
@@ -934,17 +999,7 @@
   position: relative;
 }
 
-.control-label {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #222222;
-}
-
-.control-input[type=radio]:checked + .control-mark-radio::after {
+.control-input[type=radio]:checked + .control-mark--radio::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -956,78 +1011,6 @@
   border-radius: 50%;
 }
 
-.form-wrapper--landlord {
-  padding: 26px 0 24px;
-  box-sizing: border-box;
-}
-
-.form-title {
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-  color: #000000;
-  margin: 0;
-  margin-bottom: 35px;
-}
-
-.form-input-with-icon {
-  padding-right: 40px;
-  position: relative;
-  background-position: center right 15px;
-  background-repeat: no-repeat;
-}
-.form-input-with-icon--email {
-  background-image: url("../img/input-icon-email.svg");
-}
-.form-input-with-icon--phone {
-  background-image: url("../img/input-icon-phone.svg");
-}
-
-.form-wrapper--comments {
-  padding: 0 0 23px;
-}
-
-.form-input-textarea {
-  border: 1px solid #e7e7e7;
-  width: 100%;
-  padding: 10px 12px;
-  box-sizing: border-box;
-  height: 150px;
-  resize: none;
-  font-family: "Oswald", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
-  color: #444444;
-}
-.form-input-textarea::placeholder {
-  text-transform: uppercase;
-}
-
-.form-wrapper--other {
-  padding: 0 0 34px;
-}
-
-.form-group {
-  display: flex;
-  align-items: center;
-}
-
-.filter-control--check:not(:last-child) {
-  margin-bottom: 13px;
-}
-
-.control-mark-check {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #cdcdcd;
-  margin-right: 15px;
-  position: relative;
-}
-
 .control-label {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -1038,16 +1021,17 @@
   color: #222222;
 }
 
-.control-input[type=checkbox]:checked + .control-mark-check::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url("../../img/check-checked.svg");
+.input-with-icon {
+  padding-right: 40px;
+  position: relative;
+  background-position: center right 15px;
   background-repeat: no-repeat;
-  width: 26px;
-  height: 26px;
+}
+.input-with-icon--email {
+  background-image: url("../img/input-icon-email.svg");
+}
+.input-with-icon--phone {
+  background-image: url("../img/input-icon-phone.svg");
 }
 
 .form-footer__button {
