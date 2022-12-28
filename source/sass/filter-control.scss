@@ -1,0 +1,8 @@
+.filter-control {
+  &--check,
+  &--radio {
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+  }
+}

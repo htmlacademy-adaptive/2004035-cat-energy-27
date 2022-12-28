@@ -21,12 +21,17 @@
 @use "./promo.scss";
 // Main-Form
 @use "./form.scss";
-@use "./form-wrapper--name.scss";
-@use "./form-wrapper--goal.scss";
-@use "./form-wrapper--landlord.scss";
-@use "./form-input-with-icon.scss";
-@use "./form-wrapper--comments.scss";
-@use "./form-wrapper--other.scss";
+// @use "./title-with-line.scss";
+@use "./form-title.scss";
+@use "./form-wrapper.scss";
+@use "./form-input.scss";
+@use "./form-label.scss";
+@use "./form-group.scss";
+@use "./form-value.scss";
+@use "./filter-control.scss";
+@use "./control-mark.scss";
+@use "./control-label.scss";
+@use "./input-with-icon.scss";
 @use "./form-footer.scss";
 // Footer
 @use "./address.scss";

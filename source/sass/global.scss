@@ -28,6 +28,7 @@
 .container {
   margin: 0 auto;
   width: 280px;
+  // overflow-x: hidden;
 
   @media (min-width: 768px) {
     width: 708px;

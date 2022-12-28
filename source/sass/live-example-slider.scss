@@ -10,7 +10,7 @@
   position: relative;
 }
 
-.live-example__slider-before {
+.live-example__cat-before-food {
   width: 50%;
   overflow: hidden;
 
@@ -29,14 +29,22 @@
   }
 }
 
-.live-example__slider-after {
+.live-example__cat-after-food {
   width: 50%;
   overflow: hidden;
   transform: scale(-1, 1);
 }
 
-.live-example__slider-after__image {
-  transform: scale(-1, 1);
+.live-example__cat-before-food-image {
+  height: 100%;
+}
+
+.live-example__cat-after-food-image {
+  height: 100%;
+
+  &--mirrored {
+    transform: scale(-1, 1);
+  }
 }
 
 .live-example__slider-curtine {
