@@ -19,6 +19,21 @@
   &::placeholder {
     text-transform: uppercase;
   }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid $special-dark-grey;
+    outline-offset: -1px;
+  }
+
+  &:disabled,
+  &--disabled {
+    outline: 2px solid #ff8282;
+    outline-offset: -1px;
+  }
 }
 
 .form-input__textarea {

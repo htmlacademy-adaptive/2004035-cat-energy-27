@@ -15,9 +15,27 @@
   text-align: center;
   box-sizing: border-box;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: mix(#5eaa2f, $black, 95%);
+    color: mix($white, #5eaa2f, 50%);
+  }
+
   &--grey {
     color: $special-dark-grey;
     background-color: $basic-grey;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      background-color: mix(#ebebeb, $black, 99%);
+      color: mix($white, $special-dark-grey, 60%);
+    }
   }
 
   @media (min-width: 768px) {
