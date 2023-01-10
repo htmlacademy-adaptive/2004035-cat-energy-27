@@ -34,6 +34,38 @@
     outline: 2px solid #ff8282;
     outline-offset: -1px;
   }
+
+  &--email {
+    background-image: url("../img/email-default.svg");
+    padding-right: 40px;
+    position: relative;
+    background-position: center right 15px;
+    background-repeat: no-repeat;
+
+    &:focus {
+      background-image: url("../img/email-focus.svg");
+    }
+
+    &:disabled {
+      background-image: url("../img/email-error.svg");
+    }
+  }
+
+  &--phone {
+    background-image: url("../img/phone-default.svg");
+    padding-right: 40px;
+    position: relative;
+    background-position: center right 15px;
+    background-repeat: no-repeat;
+
+    &:focus {
+      background-image: url("../img/phone-focus.svg");
+    }
+
+    &:disabled {
+      background-image: url("../img/phone-error.svg");
+    }
+  }
 }
 
 .form-input__textarea {

@@ -29,10 +29,9 @@
 @use "./form-group.scss";
 @use "./form-value.scss";
 @use "./filter-control.scss";
-@use "./control-input.scss";
-@use "./control-mark.scss";
-@use "./control-label.scss";
-@use "./input-with-icon.scss";
+@use "./control.scss";
+// @use "./input-with-icon.scss";
+@use "./input.scss";
 @use "./form-footer.scss";
 // Footer
 @use "./address.scss";
