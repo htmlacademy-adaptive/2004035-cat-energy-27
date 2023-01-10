@@ -1,0 +1,45 @@
+.main-header {
+  background-color: #ffffff;
+
+  padding: 10px 20px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.main-header__logo {
+  width: 33.3px;
+  height: 37.6px;
+}
+
+.button-menu {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.button-menu__checkbox {
+  display: none;
+}
+
+.button-menu__img {
+  background-image: url("../../img/open-mobile-menu.svg");
+  width: 24px;
+  height: 18px;
+  display: block;
+}
+
+.button-menu__checkbox[type="checkbox"]:checked + .button-menu__img {
+  background: none;
+}
+
+.button-menu__checkbox[type="checkbox"]:checked + .button-menu__img::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 19px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../img/close-mobile-menu.svg");
+}

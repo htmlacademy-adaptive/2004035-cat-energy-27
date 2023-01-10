@@ -1,0 +1,35 @@
+.input--with-icon {
+  padding-right: 40px;
+  position: relative;
+
+  background-position: center right 15px;
+  background-repeat: no-repeat;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &_email {
+    background-image: url("../img/email-default.svg");
+
+    &:focus {
+      background-image: url("../img/email-focus.svg");
+    }
+
+    &:disabled {
+      background-image: url("../img/email-error.svg");
+    }
+  }
+
+  &_phone {
+    background-image: url("../img/phone-default.svg");
+
+    &:focus {
+      background-image: url("../img/phone-focus.svg");
+    }
+
+    &:disabled {
+      background-image: url("../img/phone-error.svg");
+    }
+  }
+}
