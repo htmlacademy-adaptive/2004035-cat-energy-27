@@ -1,5 +1,9 @@
 @import "variable";
 
+.control:not(:last-child) {
+  margin-bottom: 13px;
+}
+
 .control__label {
   font-family: "Oswald", sans-serif;
   font-style: normal;
