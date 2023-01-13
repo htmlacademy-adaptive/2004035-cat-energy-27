@@ -34,34 +34,6 @@
   max-width: 76px;
 }
 
-.card-item-table {
-  // display: block;
-  min-width: 140px;
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  color: $special-dark-grey;
-}
-
-.card-item-table__column {
-  min-width: 140px;
-}
-
-.card-item-table__name {
-  margin: 0;
-  padding: 0;
-}
-
-.card-item-table__desc {
-  // align-content: end;
-  // justify-content: space-between;
-  text-align: end;
-  margin: 0;
-  padding: 0;
-}
-
 .card-item__image {
   margin: auto;
 }

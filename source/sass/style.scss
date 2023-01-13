@@ -1,7 +1,11 @@
 // Header
 @use "fonts";
-@use "global";
-@use "./header";
+@use "./section.scss";
+@use "./visually-hidden.scss";
+@use "./page.scss";
+@use "./container.scss";
+@use "./main-header.scss";
+@use "./button-menu.scss";
 @use "./navigation";
 @use "./Components/button";
 // Main-Index
@@ -11,9 +15,10 @@
 @use "./live-example.scss";
 @use "./live-example-slider.scss";
 // Main-Catalog
-@use "./catalog-list.scss";
+@use "./catalog.scss";
 @use "./card-list.scss";
 @use "./card-item.scss";
+@use "./card-item-table.scss";
 @use "./last-card.scss";
 @use "./more-products.scss";
 @use "./more-products-card.scss";
@@ -21,6 +26,7 @@
 @use "./promo.scss";
 // Main-Form
 @use "./form.scss";
+@use "./form-main.scss";
 // @use "./title-with-line.scss";
 @use "./form-title.scss";
 @use "./form-wrapper.scss";
