@@ -1,0 +1,16 @@
+@import "variable";
+
+.form-label {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+  margin-right: 13px;
+}
+
+.form-label--small {
+  width: 94px;
+}

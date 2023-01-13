@@ -1,0 +1,19 @@
+@import "variable";
+
+.section {
+  background-color: $white;
+
+  &--darker {
+    background-color: $section-dark;
+  }
+}
+
+.section__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $black;
+  margin: 0;
+}

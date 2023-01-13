@@ -1,1 +1,45 @@
-// Начните писать стили здесь
+// Header
+@use "fonts";
+@use "./section.scss";
+@use "./visually-hidden.scss";
+@use "./page.scss";
+@use "./container.scss";
+@use "./main-header.scss";
+@use "./button-menu.scss";
+@use "./navigation";
+@use "./Components/button";
+// Main-Index
+@use "./hero-block.scss";
+@use "./programs.scss";
+@use "./work.scss";
+@use "./live-example.scss";
+@use "./live-example-slider.scss";
+// Main-Catalog
+@use "./catalog.scss";
+@use "./card-list.scss";
+@use "./card-item.scss";
+@use "./card-item-table.scss";
+@use "./last-card.scss";
+@use "./more-products.scss";
+@use "./more-products-card.scss";
+@use "./more-products-card-table.scss";
+@use "./promo.scss";
+// Main-Form
+@use "./form.scss";
+@use "./form-main.scss";
+// @use "./title-with-line.scss";
+@use "./form-title.scss";
+@use "./form-wrapper.scss";
+@use "./form-input.scss";
+@use "./form-textarea.scss";
+@use "./form-label.scss";
+@use "./form-group.scss";
+@use "./form-value.scss";
+@use "./control.scss";
+// @use "./input-with-icon.scss";
+@use "./input.scss";
+@use "./form-footer.scss";
+// Footer
+@use "./address.scss";
+@use "./location.scss";
+@use "./footer.scss";

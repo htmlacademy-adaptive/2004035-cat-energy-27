@@ -1,0 +1,9 @@
+.form-value {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}

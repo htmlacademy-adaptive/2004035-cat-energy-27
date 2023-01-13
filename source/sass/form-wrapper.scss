@@ -1,0 +1,28 @@
+.form-wrapper {
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  &--name {
+    padding: 39px 0 24px;
+  }
+
+  &--landlord {
+    padding: 26px 0 24px;
+    box-sizing: border-box;
+  }
+
+  &--comments {
+    padding: 0 0 23px;
+  }
+
+  &--goal {
+    padding: 22px 0 19px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--other {
+    padding: 0 0 34px;
+  }
+}

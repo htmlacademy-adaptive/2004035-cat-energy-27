@@ -1,0 +1,27 @@
+@import "variable";
+
+.address__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 0;
+}
+
+.address__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 0;
+}
+
+.address__text {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $special-dark-grey;
+}
