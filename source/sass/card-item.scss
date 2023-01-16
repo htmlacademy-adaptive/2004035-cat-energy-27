@@ -9,6 +9,14 @@
   &:last-child {
     border-bottom: 1px solid #ebebeb;
   }
+
+  @media (min-width: $tablet) {
+    background-color: $basic-grey;
+    padding: 0 38px 39px 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
 }
 
 .card-item__info-wrapper {
@@ -19,6 +27,12 @@
   padding-bottom: 9px;
   margin-bottom: 13px;
   // padding-bottom: 21px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column-reverse;
+    // background-color: $basic-grey;
+  }
 }
 
 .card-item__title {
@@ -32,6 +46,14 @@
   color: $card-item-title;
   margin-bottom: 14px;
   max-width: 76px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 155px;
+    text-align: center;
+    margin: 0 auto 21px;
+  }
 }
 
 .card-item__image {

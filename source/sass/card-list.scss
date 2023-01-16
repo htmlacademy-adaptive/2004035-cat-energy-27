@@ -1,5 +1,13 @@
 @import "mixins";
+@import "variable";
 
 .card-list {
   @include reset-list;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    column-gap: 60px;
+    row-gap: 68px;
+  }
 }

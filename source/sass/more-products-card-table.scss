@@ -7,6 +7,11 @@
   font-size: 14px;
   line-height: 14px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .more-products-card-table__info-name {
@@ -16,6 +21,10 @@
   font-size: 14px;
   line-height: 20px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet) {
+    text-align: end;
+  }
 }
 
 .more-products-card-table__info-price {
@@ -26,4 +35,9 @@
   line-height: 14px;
   color: $special-dark-grey;
   text-align: end;
+
+  @media (min-width: $tablet) {
+    width: 94px;
+    padding: 0;
+  }
 }

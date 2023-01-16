@@ -2,6 +2,10 @@
 
 .promo {
   padding: 35px 0 35px;
+
+  @media (min-width: $tablet) {
+    padding: 69px 0 76px;
+  }
 }
 
 .promo__wrapper {
@@ -10,6 +14,13 @@
   background-color: transparent;
   padding-top: 59px;
   padding-bottom: 43px;
+
+  @media (min-width: $tablet) {
+    padding: 57px 124px 60px 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .promo__background {
@@ -37,6 +48,10 @@
 .promo__img {
   display: block;
   margin: 0 auto 48px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .promo__text {
@@ -49,4 +64,9 @@
   line-height: 20px;
   color: $white;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    text-align: left;
+  }
 }

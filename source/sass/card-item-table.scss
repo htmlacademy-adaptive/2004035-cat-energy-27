@@ -9,15 +9,42 @@
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 16px;
+    min-width: 250px;
+  }
 }
 
 .card-item-table__column {
   min-width: 140px;
+
+  @media (min-width: $tablet) {
+    padding-top: 7px;
+    padding-bottom: 9px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      background-color: #cdcdcd;
+    }
+  }
 }
 
 .card-item-table__name {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    padding-top: inherit;
+    padding-bottom: inherit;
+  }
 }
 
 .card-item-table__desc {
@@ -26,4 +53,9 @@
   text-align: end;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet) {
+    padding-top: inherit;
+    padding-bottom: inherit;
+  }
 }

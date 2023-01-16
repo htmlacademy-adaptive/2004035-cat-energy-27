@@ -3,6 +3,10 @@
 
 .more-products {
   padding: 25px 0 0;
+
+  @media (min-width: $tablet) {
+    padding-top: 68px;
+  }
 }
 
 .more-products__title {
@@ -13,6 +17,11 @@
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 36px;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .more-products__list {
