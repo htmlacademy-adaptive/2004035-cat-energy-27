@@ -10,6 +10,16 @@
 .work-list {
   @include reset-list;
   margin-top: 40px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 37px;
+    margin-right: 80px;
+
+    counter-reset: num;
+  }
 }
 
 .work-item {
@@ -19,6 +29,35 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet) {
+    min-height: 280px;
+    flex-direction: column;
+    align-items: start;
+    justify-items: baseline;
+    gap: 31px;
+    padding-top: 40px;
+
+    &:not(:last-child) {
+      margin: 0;
+    }
+
+    position: relative;
+    counter-increment: num;
+
+    &::before {
+      content: counter(num);
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-family: "Oswald", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: $basic-grey;
+    }
   }
 }
 
@@ -45,6 +84,11 @@
   &--scales {
     background-image: url("../../img/icon-scales.svg");
   }
+
+  @media (min-width: $tablet) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .work-item__text {
@@ -57,4 +101,11 @@
 
   margin: 0;
   width: fit-content;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 245px;
+    z-index: 1;
+  }
 }

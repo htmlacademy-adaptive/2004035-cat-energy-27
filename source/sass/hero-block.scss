@@ -19,6 +19,12 @@
   color: $white;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    color: $black;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .hero-block__intro {
@@ -32,6 +38,12 @@
   color: $white;
   margin: 0;
   margin-bottom: 29px;
+
+  @media (min-width: $tablet) {
+    color: $black;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .hero-block__image {

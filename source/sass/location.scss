@@ -20,4 +20,12 @@
     left: 50%;
     transform: translate(-50%, -80%);
   }
+
+  @media (min-width: $tablet) {
+    &::before {
+      width: 113px;
+      height: 106px;
+      background-image: url("../../img/map-pin-tablet.png");
+    }
+  }
 }
