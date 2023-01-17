@@ -2,6 +2,10 @@
 
 .control:not(:last-child) {
   margin-bottom: 13px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
 }
 
 .control__label {
@@ -12,6 +16,38 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey-2;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.control__mark--check {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  margin-right: 15px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.control__mark--radio {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  margin-right: 15px;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .control__input[type="checkbox"]:checked + .control__mark--check {
@@ -21,10 +57,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url("../../img/check-checked.svg");
+    background-image: url("../img/check-checked.svg");
     background-repeat: no-repeat;
     width: 26px;
     height: 26px;
+
+    @media (min-width: $tablet) {
+      background-image: url("../img/check-checked-middle.svg");
+    }
   }
 }
 
@@ -39,22 +79,10 @@
     width: 13px;
     height: 13px;
     border-radius: 50%;
+
+    @media (min-width: $tablet) {
+      width: 18px;
+      height: 18px;
+    }
   }
-}
-
-.control__mark--check {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #cdcdcd;
-  margin-right: 15px;
-  position: relative;
-}
-
-.control__mark--radio {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #cdcdcd;
-  border-radius: 50%;
-  margin-right: 15px;
-  position: relative;
 }

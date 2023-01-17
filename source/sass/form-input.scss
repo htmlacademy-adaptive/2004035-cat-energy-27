@@ -66,4 +66,10 @@
       background-image: url("../img/phone-error.svg");
     }
   }
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 11px 20px;
+  }
 }

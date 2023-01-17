@@ -9,4 +9,10 @@
   color: $black;
   margin: 0;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
 }

@@ -1,3 +1,13 @@
+@import "variable";
+
+.form-footer {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 282px 178px;
+    column-gap: 64px;
+  }
+}
+
 .form-footer__button {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -8,6 +18,13 @@
   border: none;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 0px;
+    padding: 13px 45px;
+    min-height: 52px;
+  }
 }
 
 .form-footer__required {
@@ -19,4 +36,10 @@
   text-align: center;
   margin: 0;
   margin-top: 21px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 0;
+  }
 }

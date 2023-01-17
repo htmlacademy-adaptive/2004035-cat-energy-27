@@ -1,3 +1,5 @@
+@import "variable";
+
 .form-wrapper {
   border: none;
   padding: 0;
@@ -24,5 +26,31 @@
 
   &--other {
     padding: 0 0 34px;
+  }
+
+  @media (min-width: $tablet) {
+    &--name {
+      padding-top: 66px;
+      padding-bottom: 72px;
+    }
+
+    &--goal {
+      padding: 25px 28px;
+      margin: 0 37px 0 41px;
+      border: 1px solid #e7e7e7;
+      row-gap: 13px;
+    }
+
+    &--landlord {
+      padding: 75px 0 65px;
+    }
+
+    &--comments {
+      padding: 0 0 65px;
+    }
+
+    &--other {
+      padding: 0 0 54px;
+    }
   }
 }
