@@ -3,6 +3,13 @@
 .programs {
   // padding: 0 20px;
   padding-top: 20px;
+
+  @media (min-width: $desktop) {
+    padding-top: 82px;
+    display: grid;
+    grid-template-columns: 570px 570px;
+    column-gap: 80px;
+  }
 }
 
 .program-card {
@@ -20,6 +27,16 @@
     padding: 77px 62px 57px 52px;
     grid-template-columns: 340px 200px;
   }
+
+  @media (min-width: $desktop) {
+    &:last-child {
+      margin-top: 0;
+    }
+
+    grid-template-columns: 100px 1fr;
+    column-gap: 62px;
+    padding: 47px 60px 55px 52px;
+  }
 }
 
 .program-card__cricle {
@@ -34,6 +51,14 @@
 
     grid-column: 2/3;
     grid-row: none;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100px;
+    height: 100px;
+
+    grid-column: auto/auto;
+    grid-row: auto/auto;
   }
 }
 
@@ -53,6 +78,11 @@
     font-size: 36px;
     line-height: 36px;
     grid-column: auto;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column: auto/auto;
+    grid-row: auto/auto;
   }
 }
 
@@ -79,6 +109,14 @@
     margin-bottom: 48px;
     padding: 0;
     border: none;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column: 1/3;
+    grid-row: auto/auto;
+    margin: 0;
+    margin-top: 39px;
+    margin-bottom: 27px;
   }
 }
 

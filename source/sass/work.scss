@@ -20,6 +20,11 @@
 
     counter-reset: num;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    margin-top: 32px;
+  }
 }
 
 .work-item {

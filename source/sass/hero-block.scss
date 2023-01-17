@@ -7,6 +7,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 416px 1fr;
+    padding: 60px 70px 216px 150px;
+  }
 }
 
 .hero-block__title {
@@ -22,6 +31,13 @@
 
   @media (min-width: $tablet) {
     color: $black;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 40px;
+    text-align: left;
     font-size: 60px;
     line-height: 60px;
   }
@@ -44,11 +60,28 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-bottom: 52px;
+    text-align: left;
+  }
 }
 
 .hero-block__image {
   width: 280px;
   height: 270px;
+
+  @media (min-width: $desktop) {
+    width: 552px;
+    height: 499px;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    position: absolute;
+    top: 50%;
+    transform: translate(20px, -39%);
+  }
 }
 
 .hero-block__background-image {
@@ -63,18 +96,18 @@
 
   z-index: -1;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     background: none;
   }
 
-  @media (min-width: 1440px) {
-    top: -10%;
+  @media (min-width: $desktop) {
+    top: -25%;
     right: 0;
     min-width: 50%;
     min-height: 694px;
     background-image: url("../../img/hero-block-background-image.jpg");
     background-size: cover;
-    background-position: bottom right;
+    background-position: bottom left;
   }
 }
 
@@ -88,11 +121,11 @@
 
   z-index: -2;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     background: none;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop) {
     right: 0;
     min-width: 100%;
     min-height: 100%;
@@ -104,4 +137,10 @@
 
 .hero-block > .button {
   max-width: 280px;
+
+  @media (min-width: $desktop) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    align-self: start;
+  }
 }

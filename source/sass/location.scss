@@ -9,6 +9,12 @@
   background-color: $white;
   position: relative;
 
+  @media (min-width: $desktop) {
+    background-image: url("../img/map-desktop.png");
+    background-position: 46% 50%;
+    background-size: 110%;
+  }
+
   &::before {
     content: "";
     width: 50px;
@@ -26,6 +32,12 @@
       width: 113px;
       height: 106px;
       background-image: url("../../img/map-pin-tablet.png");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::before {
+      transform: translate(193%, -57%);
     }
   }
 }

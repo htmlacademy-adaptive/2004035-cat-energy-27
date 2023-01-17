@@ -9,6 +9,12 @@
     padding-top: 104px;
     padding-bottom: 101px;
   }
+
+  @media (min-width: $desktop) {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    padding: 0;
+  }
 }
 
 .live-example__slider-wrapper {
@@ -18,6 +24,10 @@
   @media (min-width: $tablet) {
     height: 100%;
     padding: 0 74px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
   }
 }
 

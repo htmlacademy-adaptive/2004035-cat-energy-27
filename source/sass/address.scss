@@ -1,5 +1,11 @@
 @import "variable";
 
+.address {
+  @media (min-width: $desktop) {
+    position: relative;
+  }
+}
+
 .address__info {
   display: flex;
   justify-content: space-between;
@@ -10,6 +16,17 @@
     align-items: center;
     width: 630px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 1;
+    width: 565px;
+    padding: 60px 60px 56px 80px;
+    box-sizing: border-box;
+    background-color: $white;
   }
 }
 
