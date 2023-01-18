@@ -15,6 +15,10 @@
     line-height: 16px;
     min-width: 250px;
   }
+
+  @media (min-width: $desktop) {
+    min-width: 169px;
+  }
 }
 
 .card-item-table__column {

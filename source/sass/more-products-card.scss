@@ -8,10 +8,16 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 26px 38px 28px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
   }
 }
 
@@ -41,6 +47,11 @@
   @media (min-width: $tablet) {
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop) {
+    width: 286px;
+    margin-left: auto;
+  }
 }
 
 .more-products-card__button {
@@ -56,5 +67,10 @@
 
   @media (min-width: $tablet) {
     grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 40px;
+    padding: 10px 91px;
   }
 }

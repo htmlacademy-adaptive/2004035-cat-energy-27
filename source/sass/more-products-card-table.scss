@@ -25,6 +25,10 @@
   @media (min-width: $tablet) {
     text-align: end;
   }
+
+  @media (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .more-products-card-table__info-price {

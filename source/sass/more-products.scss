@@ -31,4 +31,12 @@
 
 .more-products__item {
   padding: 13px 0 19px;
+
+  @media (min-width: $tablet) {
+    padding: 26px 38px 28px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 15px 0 17px;
+  }
 }
