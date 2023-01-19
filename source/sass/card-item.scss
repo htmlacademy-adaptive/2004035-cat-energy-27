@@ -31,6 +31,7 @@
   padding-bottom: 9px;
   margin-bottom: 13px;
   // padding-bottom: 21px;
+  position: relative;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -62,11 +63,57 @@
     text-align: center;
     margin: 0 auto 21px;
   }
+
+  @media (min-width: $desktop) {
+    padding-top: 162px;
+  }
 }
 
 .card-item__image {
   margin: auto;
+  position: absolute;
+  bottom: 202px;
+
+  // @media (min-width: $desktop) {
+  //   &:nth-child(2n+1) {
+  //     width: 161px;
+  //     height: 172px;
+  //   }
+
+  //   &:nth-child(even) {
+  //     width: 172px;
+  //     height: 196px;
+  //   }
+  // }
+
+  @media (min-width: $desktop) {
+    &--small {
+      width: 161px;
+      height: 172px;
+    }
+
+    &--big {
+      width: 172px;
+      height: 196px;
+    }
+  }
 }
+
+// .card-item .card-item__image {
+//   &:nth-child(odd) {
+//     @media (min-width: $desktop) {
+//       width: 161px;
+//       height: 172px;
+//     }
+//   }
+
+//   &:nth-child(even) {
+//     @media (min-width: $desktop) {
+//       width: 172px;
+//       height: 196px;
+//     }
+//   }
+// }
 
 .card-item__button {
   display: block;
