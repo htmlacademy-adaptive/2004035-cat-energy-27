@@ -5,6 +5,12 @@
     display: grid;
     grid-template-columns: 282px 178px;
     column-gap: 64px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 568px 178px;
+    column-gap: 84px;
   }
 }
 

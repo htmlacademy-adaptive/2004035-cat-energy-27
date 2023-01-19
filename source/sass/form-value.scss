@@ -1,3 +1,5 @@
+@import "variable";
+
 .form-value {
   display: flex;
   align-items: center;
@@ -5,5 +7,19 @@
 
   &:not(:last-child) {
     margin-bottom: 14px;
+  }
+
+  @media (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &:first-child {
+      width: 570px;
+    }
+
+    &:last-child {
+      width: 572px;
+    }
   }
 }

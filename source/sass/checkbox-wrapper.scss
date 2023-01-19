@@ -6,4 +6,10 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 32px;
   }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    row-gap: 0;
+    justify-content: space-between;
+  }
 }

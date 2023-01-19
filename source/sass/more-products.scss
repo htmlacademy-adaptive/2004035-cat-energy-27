@@ -7,6 +7,10 @@
   @media (min-width: $tablet) {
     padding-top: 68px;
   }
+
+  @media (min-width: $desktop) {
+    padding-top: 76px;
+  }
 }
 
 .more-products__title {
@@ -22,6 +26,12 @@
     font-size: 36px;
     line-height: 36px;
     margin-left: 38px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
+    margin-bottom: 81px;
   }
 }
 

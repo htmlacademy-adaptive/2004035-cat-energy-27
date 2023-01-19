@@ -60,6 +60,12 @@
   }
 }
 
+.main-navigation__item--desktop.main-navigation__item--current {
+  @media (min-width: $desktop) {
+    border-bottom-color: $basic-green;
+  }
+}
+
 .main-navigation__link {
   padding: 22px 0 24px;
   font-family: "Oswald", sans-serif;
@@ -81,5 +87,11 @@
     font-size: 20px;
     line-height: 30px;
     color: $white;
+  }
+
+  @media (min-width: $desktop) {
+    &--desktop {
+      color: #111111;
+    }
   }
 }

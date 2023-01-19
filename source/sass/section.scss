@@ -28,4 +28,9 @@
     width: 630px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    margin: 0;
+  }
 }

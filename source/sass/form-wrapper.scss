@@ -53,4 +53,24 @@
       padding: 0 0 54px;
     }
   }
+
+  @media (min-width: $desktop) {
+    &--name {
+      width: 560px;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &--goal {
+      margin: 0;
+      padding: 25px 28px;
+      min-width: 512px;
+    }
+
+    &--landlord {
+      padding-top: 69px;
+    }
+  }
 }
