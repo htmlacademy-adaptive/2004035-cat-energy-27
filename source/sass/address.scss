@@ -1,9 +1,33 @@
 @import "variable";
 
+.address {
+  @media (min-width: $desktop) {
+    position: relative;
+  }
+}
+
 .address__info {
   display: flex;
   justify-content: space-between;
   padding: 26px 0;
+
+  @media (min-width: $tablet) {
+    padding: 60px 40px 56px;
+    align-items: center;
+    width: 630px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 1;
+    width: 565px;
+    padding: 60px 60px 56px 80px;
+    box-sizing: border-box;
+    background-color: $white;
+  }
 }
 
 .address__title {
@@ -15,6 +39,12 @@
   text-transform: uppercase;
   color: #111111;
   margin: 0;
+
+  @media (min-width: $tablet) {
+    width: 171px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .address__text {
@@ -24,4 +54,11 @@
   font-size: 14px;
   line-height: 20px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet) {
+    width: 160px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

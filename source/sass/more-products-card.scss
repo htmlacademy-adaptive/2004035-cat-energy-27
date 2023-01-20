@@ -6,6 +6,19 @@
   &:last-child {
     border-bottom: 1px solid #cdcdcd;
   }
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+  }
 }
 
 .more-products-card__title {
@@ -18,12 +31,27 @@
   text-transform: uppercase;
   color: $special-dark-grey-2;
   margin-bottom: 13px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .more-products-card__info {
   padding: 0;
   width: 100%;
   margin-bottom: 12px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 286px;
+    margin-left: auto;
+  }
 }
 
 .more-products-card__button {
@@ -36,4 +64,13 @@
   padding: 10px 109px;
   // box-sizing: border-box;
   // margin-top: 13px;
+
+  @media (min-width: $tablet) {
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 40px;
+    padding: 10px 91px;
+  }
 }

@@ -1,17 +1,15 @@
 @import "variable";
 
-.form {
-  padding: 0 0 32px;
-
+.checkbox-wrapper {
   @media (min-width: $tablet) {
-    padding: 0 0 72px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 32px;
   }
-}
 
-.form__wrapper {
   @media (min-width: $desktop) {
     display: flex;
+    row-gap: 0;
     justify-content: space-between;
-    padding: 66px 0 0;
   }
 }

@@ -1,3 +1,5 @@
+@import "variable";
+
 .main-header {
   background-color: #ffffff;
 
@@ -6,6 +8,11 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+
+  @media (min-width: $desktop) {
+    background-color: transparent;
+    padding-top: 54px;
+  }
 }
 
 .main-header__logo {

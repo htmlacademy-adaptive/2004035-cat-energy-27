@@ -1,5 +1,11 @@
+@import "variable";
+
 .form-main__title {
   margin: 27px 0 37px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 54px;
+  }
 }
 
 .form-main__text {
@@ -10,4 +16,9 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
