@@ -3,11 +3,32 @@
 .live-example__slider {
   padding: 20px 0 40px;
   min-height: 256px;
+
+  @media (min-width: $tablet) {
+    height: 512px;
+    padding-top: 104px;
+    padding-bottom: 101px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    padding: 0;
+  }
 }
 
 .live-example__slider-wrapper {
   display: flex;
   position: relative;
+
+  @media (min-width: $tablet) {
+    height: 100%;
+    padding: 0 74px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
 }
 
 .live-example__cat-before-food {
@@ -37,6 +58,10 @@
 
 .live-example__cat-before-food-image {
   height: 100%;
+
+  @media (min-width: $tablet) {
+    width: 560px;
+  }
 }
 
 .live-example__cat-after-food-image {
@@ -44,6 +69,10 @@
 
   &--mirrored {
     transform: scale(-1, 1);
+  }
+
+  @media (min-width: $tablet) {
+    width: 560px;
   }
 }
 

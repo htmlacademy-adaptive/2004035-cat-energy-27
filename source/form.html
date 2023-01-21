@@ -25,14 +25,14 @@
       <nav class="main-navigation main-navigation--close">
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list">
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="index.html">главная</a>
+            <li class="main-navigation__item main-navigation__item--desktop">
+              <a class="main-navigation__link main-navigation__link--desktop" href="index.html">главная</a>
             </li>
-            <li class="main-navigation__item">
-              <a class="main-navigation__link" href="catalog.html">каталог продукции</a>
+            <li class="main-navigation__item main-navigation__item--desktop">
+              <a class="main-navigation__link main-navigation__link--desktop" href="catalog.html">каталог продукции</a>
             </li>
-            <li class="main-navigation__item main-navigation__item--current">
-              <a class="main-navigation__link" href="form.html">подбор программы</a>
+            <li class="main-navigation__item main-navigation__item--desktop main-navigation__item--current">
+              <a class="main-navigation__link main-navigation__link--desktop" href="form.html">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -44,55 +44,59 @@
         <h1 class="section__title form-main__title">Подбор программы</h1>
         <p class="form-main__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота.</p>
         <form class="form" action="post">
-          <fieldset class="form-wrapper form-wrapper--name">
-            <legend class="visually-hidden">Укажите имя, вес и возраст вашего кота</legend>
-            <!--  -->
-            <div class="form-value">
-              <label class="form-label" for="name">ИМЯ:*</label>
-              <input class="form-input" type="text" id="name" placeholder="барсик" required>
-            </div>
-            <!--  -->
-            <div class="form-value">
-              <label class="form-label" for="weight">Вес (кг):*</label>
-              <input class="form-input" type="text" id="weight" placeholder="7" pattern="\d*" required>
-            </div>
-            <!--  -->
-            <div class="form-value">
-              <label class="form-label form-label--small" for="age">Возраст (лет):</label>
-              <input class="form-input" type="text" id="age" placeholder="7" pattern="\d*">
-            </div>
-          </fieldset>
-          <fieldset class="form-wrapper form-wrapper--goal">
-            <legend class="visually-hidden">Для чего Вы ищите корм:</legend>
-            <label class="form-group control">
-              <input class="control__input visually-hidden" type="radio" name="form-contacts" value="weight-loss" checked>
-              <span class="control__mark control__mark--radio"></span>
-              <span class="control__label">похудение</span>
-            </label>
-            <!--  -->
-            <label class="form-group control">
-              <input class="control__input visually-hidden" type="radio" name="form-contacts" value="weight-gain">
-              <span class="control__mark control__mark--radio"></span>
-              <span class="control__label">Набор массы</span>
-            </label>
-            <!--  -->
-            <label class="form-group control">
-              <input class="control__input visually-hidden" type="radio" name="form-contacts" value="dont-know">
-              <span class="control__mark control__mark--radio"></span>
-              <span class="control__label">Не знаю (Нужен ваш совет)</span>
-            </label>
-          </fieldset>
+          <div class="form__wrapper">
+            <fieldset class="form-wrapper form-wrapper--name">
+              <legend class="visually-hidden">Укажите имя, вес и возраст вашего кота</legend>
+              <!--  -->
+              <div class="form-value">
+                <label class="form-label" for="name">ИМЯ:*</label>
+                <input class="form-input" type="text" id="name" placeholder="барсик" required>
+              </div>
+              <!--  -->
+              <div class="form-value">
+                <label class="form-label" for="weight">Вес (кг):*</label>
+                <input class="form-input" type="text" id="weight" placeholder="7" pattern="\d*" required>
+              </div>
+              <!--  -->
+              <div class="form-value">
+                <label class="form-label form-label--small" for="age">Возраст (лет):</label>
+                <input class="form-input" type="text" id="age" placeholder="7" pattern="\d*">
+              </div>
+            </fieldset>
+            <fieldset class="form-wrapper form-wrapper--goal">
+              <legend class="visually-hidden">Для чего Вы ищите корм:</legend>
+              <label class="form-group control">
+                <input class="control__input visually-hidden" type="radio" name="form-contacts" value="weight-loss" checked>
+                <span class="control__mark control__mark--radio"></span>
+                <span class="control__label">похудение</span>
+              </label>
+              <!--  -->
+              <label class="form-group control">
+                <input class="control__input visually-hidden" type="radio" name="form-contacts" value="weight-gain">
+                <span class="control__mark control__mark--radio"></span>
+                <span class="control__label">Набор массы</span>
+              </label>
+              <!--  -->
+              <label class="form-group control">
+                <input class="control__input visually-hidden" type="radio" name="form-contacts" value="dont-know">
+                <span class="control__mark control__mark--radio"></span>
+                <span class="control__label">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </fieldset>
+          </div>
           <fieldset class="form-wrapper form-wrapper--landlord">
             <legend class="visually-hidden">Введите ваши данные</legend>
             <p class="form-title">Контактные данные<br>(владельца кота)</p>
-            <div class="form-value">
-              <label class="form-label" for="email">E-mail:*</label>
-              <input class="form-input form-input--email" type="email" id="email" pattern="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="kuklachev@gmail.com" required>
-            </div>
-            <!--  -->
-            <div class="form-value">
-              <label class="form-label" for="tel">Телефон:*</label>
-              <input class="form-input form-input--phone" type="tel" id="tel"  pattern="\+?[0-9\s\-\(\)]+" placeholder="8 (960) 900-60-90" required>
+            <div class="landlord-wrapper">
+              <div class="form-value">
+                <label class="form-label" for="email">E-mail:*</label>
+                <input class="form-input form-input--email" type="email" id="email" pattern="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="kuklachev@gmail.com" required>
+              </div>
+              <!--  -->
+              <div class="form-value">
+                <label class="form-label" for="tel">Телефон:*</label>
+                <input class="form-input form-input--phone" type="tel" id="tel"  pattern="\+?[0-9\s\-\(\)]+" placeholder="8 (960) 900-60-90" required>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form-wrapper form-wrapper--comments">
@@ -105,29 +109,31 @@
             <legend class="visually-hidden">Дополнительно</legend>
             <p class="form-title">Дополнительно</p>
             <!--  -->
-            <label class="form-group control">
-              <input class="control__input visually-hidden" type="checkbox" name="filter-filler" value="sweetener" checked>
-              <span class="control__mark control__mark--check"></span>
-              <span class="control__label">сахарозаменитель</span>
-            </label>
-            <!--  -->
-            <label class="form-group control">
-              <input class="control__input visually-hidden" type="checkbox" name="filter-filler" value="water">
-              <span class="control__mark control__mark--check"></span>
-              <span class="control__label">питьевая вода</span>
-            </label>
-            <!--  -->
-            <label class="form-group control">
-              <input class="control__input visually-hidden" type="checkbox" name="filter-filler" value="milk">
-              <span class="control__mark control__mark--check"></span>
-              <span class="control__label">молоко</span>
-            </label>
-            <!--  -->
-            <label class="form-group control">
-              <input class="control__input visually-hidden" type="checkbox" name="filter-filler" value="vitamins">
-              <span class="control__mark control__mark--check"></span>
-              <span class="control__label">витамины</span>
-            </label>
+            <div class="checkbox-wrapper">
+              <label class="form-group control">
+                <input class="control__input visually-hidden" type="checkbox" name="filter-filler" value="sweetener" checked>
+                <span class="control__mark control__mark--check"></span>
+                <span class="control__label">сахарозаменитель</span>
+              </label>
+              <!--  -->
+              <label class="form-group control">
+                <input class="control__input visually-hidden" type="checkbox" name="filter-filler" value="water">
+                <span class="control__mark control__mark--check"></span>
+                <span class="control__label">питьевая вода</span>
+              </label>
+              <!--  -->
+              <label class="form-group control">
+                <input class="control__input visually-hidden" type="checkbox" name="filter-filler" value="milk">
+                <span class="control__mark control__mark--check"></span>
+                <span class="control__label">молоко</span>
+              </label>
+              <!--  -->
+              <label class="form-group control">
+                <input class="control__input visually-hidden" type="checkbox" name="filter-filler" value="vitamins">
+                <span class="control__mark control__mark--check"></span>
+                <span class="control__label">витамины</span>
+              </label>
+            </div>
             <!--  -->
           </fieldset>
           <footer class="form-footer">

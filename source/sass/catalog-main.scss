@@ -1,0 +1,16 @@
+@import "variable";
+
+.catalog-main {
+  @media (min-width: $desktop) {
+    padding-top: 47px;
+  }
+}
+
+.catalog-main__section-wrapper {
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 895px 245px;
+    column-gap: 80px;
+    padding-bottom: 86px;
+  }
+}

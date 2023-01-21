@@ -17,4 +17,10 @@
   &::placeholder {
     text-transform: uppercase;
   }
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 19px;
+  }
 }
