@@ -1,0 +1,28 @@
+@import "mixins";
+@import "variable";
+
+.program-card-image-tiger {
+  position: relative;
+
+  &::after {
+    @include program-card-image(134px, 56px);
+    content: "";
+    background-image: url("../img/program-card-image-tiger-mobile.svg");
+  }
+
+  @media (min-width: $tablet) {
+    &::after {
+      width: 268px;
+      height: 112px;
+      background-image: url("../img/program-card-image-tiger-tablet.svg");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::after {
+      width: 134px;
+      height: 56px;
+      background-image: url("../img/program-card-image-tiger-desktop.svg");
+    }
+  }
+}

@@ -3,7 +3,6 @@
 .card-item {
   padding: 11px 0 14px;
   min-height: 190px;
-  // box-sizing: border-box;
   border-top: 1px solid #ebebeb;
 
   &:last-child {
@@ -16,9 +15,11 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
+    padding-top: 162px;
   }
 
   @media (min-width: $desktop) {
+    padding-top: 0;
     padding-bottom: 40px;
   }
 }
@@ -30,13 +31,11 @@
   align-items: center;
   padding-bottom: 9px;
   margin-bottom: 13px;
-  // padding-bottom: 21px;
   position: relative;
 
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: column-reverse;
-    // background-color: $basic-grey;
   }
 
   @media (min-width: $desktop) {
@@ -71,22 +70,25 @@
 
 .card-item__image {
   margin: auto;
-  position: absolute;
-  bottom: 202px;
 
-  // @media (min-width: $desktop) {
-  //   &:nth-child(2n+1) {
-  //     width: 161px;
-  //     height: 172px;
-  //   }
+  @media (min-width: $tablet) {
+    position: absolute;
+    bottom: 215px;
 
-  //   &:nth-child(even) {
-  //     width: 172px;
-  //     height: 196px;
-  //   }
-  // }
+    &--small {
+      width: 161px;
+      height: 172px;
+    }
+
+    &--big {
+      width: 168px;
+      height: 206px;
+    }
+  }
 
   @media (min-width: $desktop) {
+    bottom: 202px;
+
     &--small {
       width: 161px;
       height: 172px;
@@ -99,22 +101,6 @@
   }
 }
 
-// .card-item .card-item__image {
-//   &:nth-child(odd) {
-//     @media (min-width: $desktop) {
-//       width: 161px;
-//       height: 172px;
-//     }
-//   }
-
-//   &:nth-child(even) {
-//     @media (min-width: $desktop) {
-//       width: 172px;
-//       height: 196px;
-//     }
-//   }
-// }
-
 .card-item__button {
   display: block;
   font-family: "Oswald", sans-serif;
@@ -123,8 +109,6 @@
   font-size: 16px;
   line-height: 20px;
   padding: 10px 109px;
-  // box-sizing: border-box;
-  // margin-top: 13px;
 
   @media (min-width: $desktop) {
     padding: 10px 53px;

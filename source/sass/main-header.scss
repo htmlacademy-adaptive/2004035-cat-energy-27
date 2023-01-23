@@ -9,6 +9,10 @@
   align-items: center;
   position: relative;
 
+  @media (min-width: $tablet) {
+    padding-top: 0;
+  }
+
   @media (min-width: $desktop) {
     background-color: transparent;
     padding-top: 54px;
@@ -18,4 +22,20 @@
 .main-header__logo {
   width: 33.3px;
   height: 37.6px;
+
+  @media (min-width: $tablet) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.main-header-logo-text {
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }

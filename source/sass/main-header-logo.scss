@@ -1,0 +1,31 @@
+@import "variable";
+
+.main-header-logo {
+  &__image-tablet {
+    display: none;
+  }
+
+  &__image-desktop {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    &__image {
+      display: none;
+    }
+
+    &__image-tablet {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &__image-tablet {
+      display: none;
+    }
+
+    &__image-desktop {
+      display: block;
+    }
+  }
+}

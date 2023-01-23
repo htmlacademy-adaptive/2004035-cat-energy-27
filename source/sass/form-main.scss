@@ -1,10 +1,15 @@
 @import "variable";
 
+.form-main {
+  overflow-x: hidden;
+}
+
 .form-main__title {
   margin: 27px 0 37px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 54px;
+    margin-bottom: 56px;
+    padding-top: 29px;
   }
 }
 
