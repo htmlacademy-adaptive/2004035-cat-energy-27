@@ -1,40 +1,4 @@
-@import "mixins";
 @import "variable";
-
-.works {
-  padding: 0 20px;
-  padding-top: 20px;
-  padding-bottom: 49px;
-
-  @media (min-width: $tablet) {
-    padding-top: 45px;
-  }
-
-  @media (min-width: $desktop) {
-    padding-top: 71px;
-    padding-bottom: 10px;
-  }
-}
-
-.work-list {
-  @include reset-list;
-  margin-top: 40px;
-
-  @media (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 37px;
-    margin-right: 80px;
-
-    counter-reset: num;
-  }
-
-  @media (min-width: $desktop) {
-    margin: 0;
-    margin-top: 32px;
-  }
-}
 
 .work-item {
   display: flex;
