@@ -44,9 +44,20 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../../img/promo-image.png");
+  background-image: image-set( url("../img/promo-image-mobile.png") 1x,
+                               url("../img/promo-image-mobile@2x.png") 2x);
   background-size: cover;
   z-index: -1;
+
+  @media (min-width: $tablet) {
+    background-image: image-set( url("../img/promo-image-tablet.png") 1x,
+                                 url("../img/promo-image-tablet@2x.png") 2x);
+  }
+
+  @media (min-width: $desktop) {
+    background-image: image-set( url("../img/promo-image-desktop.png") 1x,
+                                 url("../img/promo-image-desktop@2x.png") 2x);
+  }
 
   &::after {
     content: "";

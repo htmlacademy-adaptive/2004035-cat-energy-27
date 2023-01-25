@@ -45,8 +45,11 @@
       <section class="hero-block">
         <h1 class="hero-block__title">Функциональное питание для котов</h1>
         <p class="hero-block__intro">Занялся собой? Займись котом!</p>
-        <img class="hero-block__image" src="img/hero-block-image.png" width="280" height="270" alt="Оранжевая банка корма 'CAT ENERGY PR' со вкусом курицы(0% natural).">
-        <img class="hero-block__image--tablet" src="img/hero-block-image--tablet.png" alt="Оранжевая банка корма 'CAT ENERGY PR' со вкусом курицы(0% natural).">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/hero-block-image-desktop.png 1x, img/hero-block-image-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/hero-block-image-tablet.png 1x, img/hero-block-image-tablet@2x.png 2x">
+          <img class="hero-block__image" src="img/hero-block-image-mobile.png" srcset="img/hero-block-image-mobile@2x.jpg 2x" width="280" height="270" alt="Оранжевая банка корма 'CAT ENERGY PR' со вкусом курицы(0% natural).">
+        </picture>
         <a class="button" href="form.html">подобрать программу</a>
         <span class="hero-block__background-image"></span>
       </section>
@@ -134,9 +137,7 @@
         </div>
         <div class="location">
           <span class="visually-hidden">Магазин на карте.</span>
-          <!-- <iframe class="location__map map" style="height: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.6509465402557!2d30.322500229360966!3d59.93871650000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2str!4v1669665757322!5m2!1sru!2str"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-          <!-- <img class="location__map map" src="./img/map.png" alt="Карта"> -->
-          <!-- <img class="location__map map" src="./img/location.png" alt="Карта"> -->
+          <!-- <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300295!2d30.320858715879634!3d59.93871916905443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2str!4v1674578441236!5m2!1sru!2str"  height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         </div>
       </section>
       <div class="footer__icons section section--darker">

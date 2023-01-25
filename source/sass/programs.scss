@@ -35,7 +35,7 @@
 
     grid-template-columns: 100px 1fr;
     column-gap: 62px;
-    padding: 47px 60px 55px 52px;
+    padding: 52px 60px 55px 52px;
   }
 }
 
@@ -116,7 +116,7 @@
     grid-row: auto/auto;
     margin: 0;
     margin-top: 39px;
-    margin-bottom: 27px;
+    margin-bottom: 23px;
   }
 }
 
@@ -142,7 +142,7 @@
     position: absolute;
     top: 50%;
     right: 8px;
-    transform: translate(0, -50%);
+    transform: translate(12px, -50%);
     display: inline-block;
     width: 0;
     height: 0;
@@ -156,7 +156,7 @@
     position: absolute;
     top: 50%;
     right: 14px;
-    transform: translate(0, -50%);
+    transform: translate(11px, -50%);
     width: 18px;
     height: 2px;
     background-color: $black;

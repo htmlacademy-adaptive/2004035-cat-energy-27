@@ -27,7 +27,7 @@
 .card-item__info-wrapper {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
   padding-bottom: 9px;
   margin-bottom: 13px;
@@ -64,25 +64,39 @@
   }
 
   @media (min-width: $desktop) {
-    padding-top: 162px;
+    padding-top: 171px;
+    margin-bottom: 8px;
   }
 }
 
 .card-item__image {
   margin: auto;
+  display: block;
+
+  &--small {
+    margin-right: 36px;
+  }
+
+  &--big {
+    margin-right: 28px;
+  }
 
   @media (min-width: $tablet) {
     position: absolute;
+    left: 50%;
+    transform: translate(-50%);
     bottom: 215px;
 
     &--small {
       width: 161px;
       height: 172px;
+      margin-right: 0;
     }
 
     &--big {
       width: 168px;
       height: 206px;
+      margin-right: 0;
     }
   }
 
