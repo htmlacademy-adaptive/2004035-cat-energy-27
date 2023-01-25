@@ -7,12 +7,15 @@
 @use "./main-header.scss";
 @use "./button-menu.scss";
 @use "./navigation";
-@use "./Components/button";
+@use "./button";
 @use "./main-header-logo.scss";
 // Main-Index
 @use "./hero-block.scss";
 @use "./programs.scss";
-@use "./work.scss";
+@use "./program-card.scss";
+@use "./works.scss";
+@use "./work-list.scss";
+@use "./work-item.scss";
 @use "./live-example.scss";
 @use "./live-example-slider.scss";
 // Main-Catalog
@@ -29,7 +32,6 @@
 // Main-Form
 @use "./form.scss";
 @use "./form-main.scss";
-// @use "./title-with-line.scss";
 @use "./form-title.scss";
 @use "./form-wrapper.scss";
 @use "./form-input.scss";

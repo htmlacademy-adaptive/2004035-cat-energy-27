@@ -4,6 +4,18 @@
   overflow-x: hidden;
 }
 
+.form-main .section {
+  @media (min-width: $tablet) {
+    width: 630px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+    // margin: 0;
+  }
+}
+
 .form-main__title {
   margin: 27px 0 37px;
 
