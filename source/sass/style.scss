@@ -12,8 +12,6 @@
 // Main-Index
 @use "./hero-block.scss";
 @use "./programs.scss";
-@use "./program-card-image-cat.scss";
-@use "./program-card-image-tiger.scss";
 @use "./work.scss";
 @use "./live-example.scss";
 @use "./live-example-slider.scss";
@@ -48,4 +46,5 @@
 // Footer
 @use "./address.scss";
 @use "./location.scss";
+// @use "./map.scss";
 @use "./footer.scss";

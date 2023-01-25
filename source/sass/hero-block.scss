@@ -51,7 +51,8 @@
     text-align: left;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 22px;
+    margin-bottom: 40px;
+    margin-left: 40px;
   }
 }
 
@@ -88,37 +89,23 @@
   height: 270px;
 
   @media (min-width: $tablet) {
-    display: none;
+    position: absolute;
+    width: 709px;
+    height: 609px;
+    left: 50%;
+    bottom: -20px;
+    transform: translate(-50%);
+    z-index: -1;
   }
 
   @media (min-width: $desktop) {
-    display: block;
     width: 552px;
     height: 499px;
     grid-column: 2/3;
     grid-row: 1/4;
-    position: absolute;
     top: 50%;
-    transform: translate(-32px, -40%);
-  }
-
-  &--tablet {
-    display: none;
-
-    @media (min-width: $tablet) {
-      display: block;
-      position: absolute;
-      width: 709px;
-      height: 609px;
-      left: 50%;
-      bottom: -20px;
-      transform: translate(-50%);
-      z-index: -1;
-    }
-
-    @media (min-width: $desktop) {
-      display: none;
-    }
+    transform: translate(-78.5%, -44.5%);
+    z-index: 1;
   }
 }
 
@@ -127,12 +114,17 @@
   top: 0;
   min-width: 100%;
   min-height: 302px;
-  background-image: url("../../img/hero-block-background-image.jpg");
-  background-size: 180%;
-  background-position: -159px -43px;
+  // background-image: url("../../img/hero-block-background-image-mobile.jpg");
+  background-image: url("../img/hero-block-background-image-mobile.png");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 
   z-index: -1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-block-background-image-mobile@2x.png");
+  }
 
   @media (min-width: $tablet) {
     background: none;
@@ -143,9 +135,14 @@
     right: 0;
     min-width: 50%;
     min-height: 694px;
-    background-image: url("../../img/hero-block-background-image.jpg");
+    // background-image: url("../../img/hero-block-background-image.jpg");
+    background-image: url("../img/hero-block-background-image-desktop.png");
     background-size: cover;
-    background-position: bottom left;
+    background-position: bottom left 5%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-block-background-image-desktop@2x.png");
+    }
   }
 }
 
@@ -185,5 +182,8 @@
     grid-column: 1/2;
     grid-row: 3/4;
     align-self: start;
+    padding: 17px 28px;
+    margin-left: 40px;
+    width: fit-content;
   }
 }
