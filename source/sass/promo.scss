@@ -44,19 +44,28 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: image-set( url("../img/promo-image-mobile.png") 1x,
-                               url("../img/promo-image-mobile@2x.png") 2x);
+  background-image: url("../img/promo-image-mobile.png");
   background-size: cover;
   z-index: -1;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/promo-image-mobile@2x.png");
+  }
+
   @media (min-width: $tablet) {
-    background-image: image-set( url("../img/promo-image-tablet.png") 1x,
-                                 url("../img/promo-image-tablet@2x.png") 2x);
+    background-image: url("../img/promo-image-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-image-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop) {
-    background-image: image-set( url("../img/promo-image-desktop.png") 1x,
-                                 url("../img/promo-image-desktop@2x.png") 2x);
+    background-image: url("../img/promo-image-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-image-desktop@2x.png");
+    }
   }
 
   &::after {

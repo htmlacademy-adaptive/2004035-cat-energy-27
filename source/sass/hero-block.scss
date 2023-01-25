@@ -115,13 +115,16 @@
   min-width: 100%;
   min-height: 302px;
   // background-image: url("../../img/hero-block-background-image-mobile.jpg");
-  background-image: image-set( url("../img/hero-block-background-image-mobile.png") 1x,
-                               url("../img/hero-block-background-image-mobile@2x.png") 2x);
+  background-image: url("../img/hero-block-background-image-mobile.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   z-index: -1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hero-block-background-image-mobile@2x.png");
+  }
 
   @media (min-width: $tablet) {
     background: none;
@@ -133,10 +136,13 @@
     min-width: 50%;
     min-height: 694px;
     // background-image: url("../../img/hero-block-background-image.jpg");
-    background-image: image-set( url("../img/hero-block-background-image-desktop.png") 1x,
-                                 url("../img/hero-block-background-image-desktop@2x.png") 2x);
+    background-image: url("../img/hero-block-background-image-desktop.png");
     background-size: cover;
     background-position: bottom left 5%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-block-background-image-desktop@2x.png");
+    }
   }
 }
 
