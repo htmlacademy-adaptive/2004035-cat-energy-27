@@ -1,4 +1,5 @@
 @import "variable";
+@import "mixins";
 
 .programs {
   // padding: 0 20px;
@@ -59,6 +60,58 @@
 
     grid-column: auto/auto;
     grid-row: auto/auto;
+  }
+
+  &--cat {
+    position: relative;
+
+    &::after {
+      @include program-card-image(36px, 50px);
+      content: "";
+      background-image: url("../img/program-card-image-cat-mobile.svg");
+    }
+
+    @media (min-width: $tablet) {
+      &::after {
+        width: 140px;
+        height: 194px;
+        background-image: url("../img/program-card-image-cat-tablet.svg");
+      }
+    }
+
+    @media (min-width: $desktop) {
+      &::after {
+        width: 70px;
+        height: 97px;
+        background-image: url("../img/program-card-image-cat-desktop.svg");
+      }
+    }
+  }
+
+  &--tiger {
+    position: relative;
+
+    &::after {
+      @include program-card-image(134px, 56px);
+      content: "";
+      background-image: url("../img/program-card-image-tiger-mobile.svg");
+    }
+
+    @media (min-width: $tablet) {
+      &::after {
+        width: 268px;
+        height: 112px;
+        background-image: url("../img/program-card-image-tiger-tablet.svg");
+      }
+    }
+
+    @media (min-width: $desktop) {
+      &::after {
+        width: 134px;
+        height: 56px;
+        background-image: url("../img/program-card-image-tiger-desktop.svg");
+      }
+    }
   }
 }
 
