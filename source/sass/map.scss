@@ -1,0 +1,13 @@
+.map {
+  border: none;
+  padding: 0;
+  width: 320px;
+
+  @media (min-width: $tablet) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+  }
+}

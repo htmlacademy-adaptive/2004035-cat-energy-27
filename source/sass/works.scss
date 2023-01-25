@@ -1,0 +1,16 @@
+@import "variable";
+
+.works {
+  padding: 0 20px;
+  padding-top: 20px;
+  padding-bottom: 49px;
+
+  @media (min-width: $tablet) {
+    padding-top: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 71px;
+    padding-bottom: 10px;
+  }
+}

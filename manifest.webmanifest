@@ -1,0 +1,6 @@
+{
+  "icons": [
+    { "src": "./source/img/favicons/ms-icon-150x150.png", "type": "image/png", "sizes": "150x150" },
+    { "src": "./source/img/favicons/favicon-96x96.png", "type": "image/png", "sizes": "96x96" }
+  ]
+}

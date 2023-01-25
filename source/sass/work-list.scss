@@ -1,0 +1,22 @@
+@import "variable";
+@import "mixins";
+
+.work-list {
+  @include reset-list;
+  margin-top: 40px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 37px;
+    margin-right: 80px;
+
+    counter-reset: num;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    margin-top: 32px;
+  }
+}
