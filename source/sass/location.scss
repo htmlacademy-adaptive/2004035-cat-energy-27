@@ -11,8 +11,8 @@
 
   @media (min-width: $desktop) {
     background-image: url("../img/map-desktop.png");
-    background-position: 46% 50%;
-    background-size: 110%;
+    background-position: 33% 50%;
+    background-size: 100%;
     min-height: 400px;
   }
 
@@ -21,37 +21,24 @@
     width: 50px;
     height: 53px;
     position: absolute;
-    background-image: url("../img/map-pin-mobile.png");
+    background-image: url("../img/map-pin-mobile.svg");
     background-repeat: no-repeat;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -80%);
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/map-pin-mobile@2x.png");
-    }
   }
 
   @media (min-width: $tablet) {
     &::before {
+      background-image: url("../img/map-pin-tablet.svg");
       width: 113px;
       height: 106px;
-      background-image: url("../img/map-pin-tablet.png");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/map-pin-tablet@2x.png");
-      }
     }
   }
 
   @media (min-width: $desktop) {
     &::before {
-      transform: translate(193%, -57%);
-      background-image: url("../img/map-pin-desktop.png");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/map-pin-desktop@2x.png");
-      }
+      transform: translate(166%, -65%);
     }
   }
 }

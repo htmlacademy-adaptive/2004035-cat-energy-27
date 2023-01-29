@@ -6,7 +6,7 @@
 @use "./container.scss";
 @use "./main-header.scss";
 @use "./button-menu.scss";
-@use "./navigation";
+@use "./main-navigation";
 @use "./button";
 @use "./main-header-logo.scss";
 // Main-Index
@@ -17,7 +17,6 @@
 @use "./work-list.scss";
 @use "./work-item.scss";
 @use "./live-example.scss";
-@use "./live-example-slider.scss";
 // Main-Catalog
 @use "./catalog.scss";
 @use "./card-list.scss";

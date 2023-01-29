@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="images/favicons/apple-icon-180x180.png">
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="manifest" href="../manifest.webmanifest" crossorigin="use-credentials">
   </head>
   <body class="page__body">
     <header class="main-header container">
@@ -51,25 +51,25 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="img/hero-block-image-desktop.png 1x, img/hero-block-image-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/hero-block-image-tablet.png 1x, img/hero-block-image-tablet@2x.png 2x">
-          <img class="hero-block__image" src="img/hero-block-image-mobile.png" srcset="img/hero-block-image-mobile@2x.jpg 2x" width="280" height="270" alt="Оранжевая банка корма 'CAT ENERGY PR' со вкусом курицы(0% natural).">
+          <img class="hero-block__image" src="img/hero-block-image-mobile.png" srcset="img/hero-block-image-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая банка корма 'CAT ENERGY PR' со вкусом курицы(0% natural).">
         </picture>
         <a class="button" href="form.html">подобрать программу</a>
         <span class="hero-block__background-image"></span>
       </section>
       <section class="programs container">
         <h2 class="visually-hidden">Программы</h2>
-        <aside class="program-card">
+        <div class="program-card">
           <span class="program-card__cricle program-card__cricle--cat"></span>
           <h3 class="program-card__title">похудение</h3>
           <p class="program-card__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="program-card__link" href="#">каталог slim</a>
-        </aside>
-        <aside class="program-card">
+        </div>
+        <div class="program-card">
           <span class="program-card__cricle program-card__cricle--tiger"></span>
           <h3 class="program-card__title">Набор массы</h3>
           <p class="program-card__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="program-card__link" href="#">каталог pro</a>
-        </aside>
+        </div>
       </section>
       <section class="works section container">
         <h2 class="section__title">Как это работает</h2>
@@ -145,15 +145,37 @@
       </section>
       <div class="footer__icons section section--darker">
         <div class="footer__icons-wrapper container">
-          <svg class="footer__icon-text" width="128" height="24"><use xlink:href="img/icons.svg#footer-logo-text"></use></svg>
+          <a class="footer__cat-energy-link" href="#">
+            <svg class="footer__icon-text" width="128" height="24"><use href="img/icons.svg#footer-logo-text"></use></svg>
+          </a>
           <div class="footer__socials-wrapper">
-            <svg class="footer__social-icon" width="28" height="22"><use xlink:href="img/icons.svg#logo-vkontakte"></use></svg>
-            <svg class="footer__social-icon" width="28" height="22"><use xlink:href="img/icons.svg#logo-youtube"></use></svg>
-            <svg class="footer__social-icon" width="28" height="22"><use xlink:href="img/icons.svg#logo-telegram"></use></svg>
+            <a class="footer__social-link" href="https://vk.com/htmlacademy">
+              <svg class="footer__social-icon" width="28" height="22">
+                <use xlink:href="img/icons.svg#logo-vkontakte"></use>
+              </svg>
+            </a>
+            <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
+              <svg class="footer__social-icon" width="28" height="22">
+                <use xlink:href="img/icons.svg#logo-youtube"></use>
+              </svg>
+            </a>
+            <a class="footer__social-link" href="tg://resolve?domain=htmlacademy">
+              <svg class="footer__social-icon" width="28" height="22">
+                <use xlink:href="img/icons.svg#logo-telegram"></use>
+              </svg>
+            </a>
           </div>
           <div class="footer__academy-logo">
-            <svg class="footer__academy-logo-text" width="113" height="19"><use xlink:href="img/icons.svg#logo-academy-text"></use></svg>
-            <svg class="footer__academy-logo-icon" width="27" height="34"><use xlink:href="img/icons.svg#logo-academy-icon"></use></svg>
+            <a class="footer__academy-logo-link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="footer__academy-logo-text" width="113" height="19">
+                <use xlink:href="img/icons.svg#logo-academy-text"></use>
+              </svg>
+            </a>
+            <a class="footer__academy-logo-text-link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="footer__academy-logo-icon" width="27" height="34">
+                <use xlink:href="img/icons.svg#logo-academy-icon"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
