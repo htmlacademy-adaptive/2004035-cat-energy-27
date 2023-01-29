@@ -32,13 +32,28 @@
 
     border: none;
   }
+
+  @media (min-width: $desktop) {
+    margin-top: -5px;
+  }
 }
 
-.footer__social-icon {
+.footer__cat-energy-link {
+  text-decoration: none;
+  color: transparent;
+  margin-right: 26px;
+}
+
+.footer__social-link {
+  text-decoration: none;
+  color: transparent;
+
   &:nth-child(2) {
     margin: 0 24px;
   }
+}
 
+.footer__social-icon {
   @media (min-width: $tablet) {
     padding: 0;
     margin: 0;
@@ -55,10 +70,23 @@
     padding: 0;
     margin: 0;
   }
+
+  @media (min-width: $desktop) {
+    padding-top: 5px;
+  }
 }
 
-.footer__academy-logo-text {
+
+.footer__academy-logo-link {
+  text-decoration: none;
+  color: transparent;
+
   @media (min-width: $tablet) {
-    margin-right: 28px;
+    margin-right: 22px;
   }
+}
+
+.footer__academy-logo-text-link {
+  text-decoration: none;
+  color: transparent;
 }
