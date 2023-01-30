@@ -1,8 +1,15 @@
 @import "variable";
 
 .programs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
   // padding: 0 20px;
   padding-top: 20px;
+
+  @media (min-width: $tablet) {
+    row-gap: 30px;
+  }
 
   @media (min-width: $desktop) {
     padding-top: 82px;

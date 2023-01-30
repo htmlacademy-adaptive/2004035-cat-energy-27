@@ -34,7 +34,7 @@
     height: 100%;
     padding: 10px;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
   }
 }
 
@@ -82,7 +82,7 @@
 
 .promo__img {
   display: block;
-  margin: 0 auto 48px;
+  margin: 0 auto 53px;
 
   @media (min-width: $tablet) {
     margin: 0;

@@ -1,7 +1,7 @@
 @import "variable";
 
 .card-item {
-  padding: 11px 0 14px;
+  padding: 19px 0 0;
   min-height: 190px;
   border-top: 1px solid #ebebeb;
 
@@ -14,7 +14,7 @@
     padding: 0 38px 39px 38px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     padding-top: 162px;
   }
 
@@ -30,7 +30,7 @@
   // justify-content: space-between;
   align-items: center;
   padding-bottom: 9px;
-  margin-bottom: 13px;
+  margin-bottom: 4px;
   position: relative;
 
   @media (min-width: $tablet) {
@@ -64,7 +64,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding-top: 171px;
+    padding-top: 165px;
     margin-bottom: 8px;
     line-height: 21px;
   }
@@ -102,7 +102,7 @@
   }
 
   @media (min-width: $desktop) {
-    bottom: 202px;
+    bottom: 206px;
 
     &--small {
       width: 161px;
@@ -123,7 +123,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  padding: 10px 109px;
+  padding: 11px 26px;
 
   @media (min-width: $desktop) {
     padding: 10px 53px;
