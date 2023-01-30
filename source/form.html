@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="images/favicons/apple-icon-180x180.png">
-    <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
 
-    <header class="main-header container">
-      <a class="main-header__logo main-header-logo" href="index.html">
+    <header class="main-header container nojs__header">
+      <a class="main-header__logo main-header-logo nojs__main-header-logo" href="index.html">
         <svg class="main-header-logo__image" width="34" height="38"><use xlink:href="img/icons.svg#logo-icon"></use></svg>
         <svg class="main-header-logo__image-tablet" width="174" height="52"><use xlink:href="img/icons.svg#logo-tablet"></use></svg>
         <svg class="main-header-logo__image-desktop" width="202" height="59"><use xlink:href="img/icons.svg#logo-desktop"></use></svg>
@@ -21,53 +21,50 @@
       <a class="main-header__logo-text main-header__logo-text" href="index.html">
         <svg class="main-header__logo-text-image" width="101" height="18"><use xlink:href="img/icons.svg#logo-text"></use></svg>
       </a>
-      <!-- <button class="main-header__button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button> -->
-      <label class="button-menu">
-        <input class="button-menu__checkbox" type="checkbox" name="open">
-        <span class="button-menu__img"></span>
-        <span class="visually-hidden">Открыть меню/закрыть меню</span>
-      </label>
-      <nav class="main-navigation main-navigation--close">
-        <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item main-navigation__item--desktop">
-              <a class="main-navigation__link main-navigation__link--desktop" href="index.html">главная</a>
-            </li>
-            <li class="main-navigation__item main-navigation__item--desktop">
-              <a class="main-navigation__link main-navigation__link--desktop" href="catalog.html">каталог продукции</a>
-            </li>
-            <li class="main-navigation__item main-navigation__item--desktop main-navigation__item--current">
-              <a class="main-navigation__link main-navigation__link--desktop" href="form.html">подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+
+
+        <nav class="main-navigation">
+          <button class="button-menu nojs__button">
+            <span class="visually-hidden">Открыть меню/закрыть меню</span>
+          </button>
+          <div class="main-navigation__wrapper main-navigation__wrapper--close nojs__main-navigation">
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item">
+                <a class="main-navigation__link main-navigation__link--desktop" href="index.html">главная</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link main-navigation__link--desktop" href="catalog.html">каталог продукции</a>
+              </li>
+              <li class="main-navigation__item main-navigation__item--desktop main-navigation__item--current">
+                <a class="main-navigation__link main-navigation__link--desktop" href="form.html">подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
     </header>
 
     <main class="form-main">
       <section class="section container">
         <h1 class="section__title form-main__title">Подбор программы</h1>
         <p class="form-main__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота.</p>
-        <form class="form" action="post">
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="form__wrapper">
             <fieldset class="form-wrapper form-wrapper--name">
               <legend class="visually-hidden">Укажите имя, вес и возраст вашего кота</legend>
               <!--  -->
               <div class="form-value">
                 <label class="form-label" for="name">ИМЯ:*</label>
-                <input class="form-input" type="text" id="name" placeholder="барсик" required>
+                <input class="form-input" type="text" name="name" id="name" placeholder="барсик" required>
               </div>
               <!--  -->
               <div class="form-value">
                 <label class="form-label" for="weight">Вес (кг):*</label>
-                <input class="form-input" type="text" id="weight" placeholder="7" pattern="\d*" required>
+                <input class="form-input" type="text" name="weight" id="weight" placeholder="7" pattern="\d*" required>
               </div>
               <!--  -->
               <div class="form-value">
                 <label class="form-label form-label--small" for="age">Возраст (лет):</label>
-                <input class="form-input" type="text" id="age" placeholder="7" pattern="\d*">
+                <input class="form-input" type="text" name="age" id="age" placeholder="7" pattern="\d*">
               </div>
             </fieldset>
             <fieldset class="form-wrapper form-wrapper--goal">
@@ -97,12 +94,12 @@
             <div class="landlord-wrapper">
               <div class="form-value">
                 <label class="form-label" for="email">E-mail:*</label>
-                <input class="form-input form-input--email" type="email" id="email" pattern="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="kuklachev@gmail.com" required>
+                <input class="form-input form-input--email" name="email" type="email" id="email" pattern="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="kuklachev@gmail.com" required>
               </div>
               <!--  -->
               <div class="form-value">
                 <label class="form-label" for="tel">Телефон:*</label>
-                <input class="form-input form-input--phone" type="tel" id="tel"  pattern="\+?[0-9\s\-\(\)]+" placeholder="8 (960) 900-60-90" required>
+                <input class="form-input form-input--phone" name="phone" type="tel" id="tel"  pattern="\+?[0-9\s\-\(\)]+" placeholder="8 (960) 900-60-90" required>
               </div>
             </div>
           </fieldset>
@@ -110,7 +107,7 @@
             <legend class="visually-hidden">Комментарий</legend>
             <p class="form-title form-title--comments">Комментарий</p>
             <label class="visually-hidden" for="comments">Расскажите обо всех повадках кота</label>
-            <textarea class="form-textarea" id="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form-textarea" name="comments" id="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form-wrapper form-wrapper--other">
             <legend class="visually-hidden">Дополнительно</legend>

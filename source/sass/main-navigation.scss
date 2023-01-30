@@ -3,16 +3,12 @@
 
 .main-navigation {
   display: block;
-  position: absolute;
-  right: 50%;
-  top: 100%;
-  transform: translate(50%);
-  width: 100%;
-  z-index: 3;
-
-  &--close {
-    display: none;
-  }
+  // position: absolute;
+  // right: 50%;
+  // top: 100%;
+  // transform: translate(50%);
+  // width: 100%;
+  // z-index: 3;
 
   @media (min-width: $tablet) {
     display: block;
@@ -23,6 +19,29 @@
 
   @media (min-width: $desktop) {
     background-color: transparent;
+  }
+}
+
+.main-navigation__wrapper {
+  @media (max-width: $tablet) {
+    position: absolute;
+    right: 50%;
+    top: 100%;
+    transform: translate(50%);
+    width: 100%;
+    z-index: 3;
+  }
+
+  &--close {
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: block;
+    }
+  }
+
+  &--open {
+    display: block;
   }
 }
 
@@ -69,7 +88,7 @@
 
 .main-navigation__link {
   padding: 22px 0 24px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;

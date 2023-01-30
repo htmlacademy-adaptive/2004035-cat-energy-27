@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="images/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
 
-    <header class="main-header container">
-      <a class="main-header__logo main-header-logo" href="index.html">
+    <header class="main-header container nojs__header">
+      <a class="main-header__logo main-header-logo nojs__main-header-logo" href="index.html">
         <svg class="main-header-logo__image" width="34" height="38"><use xlink:href="img/icons.svg#logo-icon"></use></svg>
         <svg class="main-header-logo__image-tablet" width="174" height="52"><use xlink:href="img/icons.svg#logo-tablet"></use></svg>
         <svg class="main-header-logo__image-desktop" width="202" height="59"><use xlink:href="img/icons.svg#logo-desktop"></use></svg>
@@ -20,29 +21,26 @@
       <a class="main-header__logo-text main-header__logo-text" href="index.html">
         <svg class="main-header__logo-text-image" width="101" height="18"><use xlink:href="img/icons.svg#logo-text"></use></svg>
       </a>
-      <!-- <button class="main-header__button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button> -->
-      <label class="button-menu">
-        <input class="button-menu__checkbox" type="checkbox" name="open">
-        <span class="button-menu__img"></span>
-        <span class="visually-hidden">Открыть меню/закрыть меню</span>
-      </label>
-      <nav class="main-navigation main-navigation--close">
-        <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list">
-            <li class="main-navigation__item main-navigation__item--desktop">
-              <a class="main-navigation__link main-navigation__link--desktop" href="index.html">главная</a>
-            </li>
-            <li class="main-navigation__item main-navigation__item--desktop main-navigation__item--current">
-              <a class="main-navigation__link main-navigation__link--desktop" href="catalog.html">каталог продукции</a>
-            </li>
-            <li class="main-navigation__item main-navigation__item--desktop">
-              <a class="main-navigation__link main-navigation__link--desktop" href="form.html">подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+
+
+        <nav class="main-navigation">
+          <button class="button-menu nojs__button">
+            <span class="visually-hidden">Открыть меню/закрыть меню</span>
+          </button>
+          <div class="main-navigation__wrapper main-navigation__wrapper--close nojs__main-navigation">
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item">
+                <a class="main-navigation__link main-navigation__link--desktop" href="index.html">главная</a>
+              </li>
+              <li class="main-navigation__item main-navigation__item--desktop main-navigation__item--current">
+                <a class="main-navigation__link main-navigation__link--desktop" href="catalog.html">каталог продукции</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link main-navigation__link--desktop" href="form.html">подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
     </header>
 
     <main class="catalog-main container">
