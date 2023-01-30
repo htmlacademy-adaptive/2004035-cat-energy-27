@@ -6,11 +6,11 @@
   margin: 0;
 
   &--name {
-    padding: 39px 0 24px;
+    padding: 32px 0 24px;
   }
 
   &--landlord {
-    padding: 26px 0 24px;
+    padding: 26px 0 20px;
     box-sizing: border-box;
   }
 
@@ -36,7 +36,7 @@
 
     &--goal {
       padding: 25px 28px;
-      margin: 0 37px 0 41px;
+      // margin: 0 37px 0 41px;
       border: 1px solid #e7e7e7;
       row-gap: 13px;
     }
@@ -70,7 +70,11 @@
     }
 
     &--landlord {
-      padding-top: 69px;
+      padding-top: 64px;
+    }
+
+    &--comments {
+      padding-bottom: 70px;
     }
   }
 }

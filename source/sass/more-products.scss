@@ -2,14 +2,14 @@
 @import "mixins";
 
 .more-products {
-  padding: 25px 0 0;
+  padding: 35px 0 0;
 
   @media (min-width: $tablet) {
-    padding-top: 68px;
+    padding-top: 63px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 83px;
+    padding-top: 80px;
   }
 }
 

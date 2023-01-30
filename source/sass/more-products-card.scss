@@ -10,7 +10,7 @@
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 25px;
+    row-gap: 18px;
   }
 
   @media (min-width: $desktop) {
@@ -42,7 +42,7 @@
 .more-products-card__info {
   padding: 0;
   width: 100%;
-  margin-bottom: 12px;
+  // margin-bottom: 12px;
 
   @media (min-width: $tablet) {
     margin-bottom: 0;

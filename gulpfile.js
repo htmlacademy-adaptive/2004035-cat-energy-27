@@ -6,11 +6,16 @@ import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
-import svgo from 'gulp-svgo';
+import svgmin from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import csso from 'postcss-csso';
-import del from 'del';
-import squoosh from 'gulp-libsquoosh';
+import {deleteAsync} from 'del';
+import imagemin from 'gulp-imagemin';
+import mozjpeg from 'imagemin-mozjpeg';
+import optipng from 'imagemin-optipng';
+import { buffer } from 'stream/consumers';
+import pngquant from 'imagemin-pngquant';
+import convWebp from 'gulp-webp';
 
 //HTML
 
@@ -30,13 +35,23 @@ const sctipts = () => {
 
 // Images
 
-export const optimizeImages = () => {
+const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-    .pipe(squoosh())
+    .pipe(imagemin([
+      mozjpeg({quality: 75}),
+      optipng({optimizationLevel: 2, buffer}),
+      pngquant({speed: 10})
+    ]))
     .pipe(gulp.dest('build/img'))
 }
 
-export const copyImages = () => {
+const webp = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+    .pipe(convWebp())
+    .pipe(gulp.dest('build/img'))
+}
+
+const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(gulp.dest('build/img'))
 }
@@ -45,22 +60,30 @@ export const copyImages = () => {
 
 const svg = () => {
   return gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
-    .pipe(svgo())
+    .pipe(svgmin())
     .pipe(gulp.dest('build/img'))
 }
 
+// export const sprite = () => {
+//   return gulp.src('source/img/icons/*.svg')
+//     .pipe(svgmin())
+//     .pipe(svgstore())
+//     .pipe(gulp.dest('build/img'))
+// }
+
 const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
-    .pipe(svgo())
-    .pipe(svgstore({ inlineSvg: true}))
-    .pipe(gulp.dest('build/img'))
+    .pipe(svgmin())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(gulp.dest('build/img'));
 }
 
 // Copy
 
-export const copy = (done) => {
+const copy = (done) => {
   gulp.src([
-    // 'source/fonts/**/*.{woff,woff2}',
     'source/fonts/**',
     'source/*ico',
     './*.webmanifest'
@@ -88,11 +111,7 @@ const styles = () => {
 // Clean
 
 const clean = () => {
-  return del('build')
-}
-
-const cleanCssMap = () => {
-  return del('build/css/style.css.map')
+  return deleteAsync('./build')
 }
 
 // Server
@@ -100,7 +119,7 @@ const cleanCssMap = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -109,30 +128,36 @@ const server = (done) => {
   done();
 }
 
+// Reload
+
+const reload = (done) => {
+  browser.reload()
+  done()
+}
+
 // Watcher
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('sourse/js/*.js', gulp.series(sctipts))
+  gulp.watch('source/*.html').on(html, reload);
 }
 
-gulp.task('build', gulp.series(clean, copy, gulp.parallel(styles, svg, sprite, sctipts, optimizeImages, html), cleanCssMap))
+// gulp.task('build', gulp.series(clean, copy, gulp.parallel(styles, svg, sprite, sctipts, html), cleanCssMap))
 
-// export const build = gulp.series(
-//   clean,
-//   copy,
-//   gulp.parallel(
-//     styles,
-//     svg,
-//     sprite,
-//     sctipts,
-//     optimizeImages,
-//     html
-//   ),
-//   gulp.series(
-//     cleanCssMap,
-//   )
-// )
+export const build = gulp.series(
+  clean,
+  copy,
+  gulp.parallel(
+    styles,
+    svg,
+    sprite,
+    sctipts,
+    optimizeImages,
+    webp,
+    html
+  )
+)
 
 export default gulp.series(
   clean,
@@ -143,6 +168,7 @@ export default gulp.series(
     sprite,
     sctipts,
     copyImages,
+    webp,
     html
   ),
   server,

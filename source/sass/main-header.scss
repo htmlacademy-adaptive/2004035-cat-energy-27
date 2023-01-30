@@ -35,6 +35,9 @@
 }
 
 .main-header__logo-text {
+  margin-top: 10px;
+  margin-right: 5px;
+
   @media (min-width: $tablet) {
     display: none;
   }

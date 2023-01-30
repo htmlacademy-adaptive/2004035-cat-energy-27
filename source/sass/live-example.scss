@@ -4,10 +4,12 @@
 .live-example {
   // padding: 0 20px;
   padding-top: 20px;
-  padding-bottom: 75px;
+  // padding-bottom: 75px;
   position: relative;
 
   @media (min-width: $desktop) {
+    padding-bottom: 75px;
+
     &::before {
       content: "";
       position: absolute;
@@ -34,7 +36,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
   margin-top: 40px;
+  margin-bottom: 20px;
   color: $special-dark-grey;
 
   @media (min-width: $tablet) {
@@ -49,8 +53,8 @@
     grid-column: 1/2;
     grid-row: 2/3;
     margin-top: 146px;
-    margin-bottom: 69px;
     width: 432px;
+    margin-bottom: 75px;
   }
 }
 
@@ -231,9 +235,12 @@
 
 .live-example__cat-before-food-image {
   height: 100%;
+  width: 202%;
+  transform: translate(-5px, 6px);
 
   @media (min-width: $tablet) {
-    width: 560px;
+    width: 575px;
+    transform: translate(-14px);
   }
 
   @media (min-width: $desktop) {
@@ -269,7 +276,7 @@
 
   &::before {
     content: "";
-    background-image: url("../../img/sleder-buttontr.svg");
+    background-image: url("../img/sleder-buttontr.svg");
     background-repeat: no-repeat;
     width: 24px;
     height: 18px;

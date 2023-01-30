@@ -1,7 +1,7 @@
 @import "variable";
 
 .control:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet) {
     margin-bottom: 0;
@@ -27,7 +27,7 @@
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
-  margin-right: 15px;
+  margin-right: 19px;
   position: relative;
 
   @media (min-width: $tablet) {

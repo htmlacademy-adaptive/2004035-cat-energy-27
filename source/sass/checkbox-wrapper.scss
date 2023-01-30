@@ -3,13 +3,15 @@
 .checkbox-wrapper {
   @media (min-width: $tablet) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 221px 1fr;
     row-gap: 32px;
+    column-gap: 123px;
+    margin-top: -10px;
   }
 
   @media (min-width: $desktop) {
     display: flex;
     row-gap: 0;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 }
