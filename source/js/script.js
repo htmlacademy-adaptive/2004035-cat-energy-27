@@ -5,13 +5,13 @@ let mainNavigation = document.querySelector('.main-navigation__wrapper');
 let nojsMainHeaderLogo = document.querySelector('.nojs__main-header-logo');
 let nojsButton = document.querySelector('.nojs__button');
 let nojsMainNavigation = document.querySelector('.nojs__main-navigation');
-let nojsHeader = document.querySelector('.nojs__header');
+let nojsHeader = document.querySelector('.nojs');
 
 function nojs() {
   nojsMainHeaderLogo.classList.remove('nojs__main-header-logo');
   nojsButton.classList.remove('nojs__button');
   nojsMainNavigation.classList.remove('nojs__main-navigation');
-  nojsHeader.classList.remove('nojs__header');
+  nojsHeader.classList.remove('nojs');
 }
 
 nojs();

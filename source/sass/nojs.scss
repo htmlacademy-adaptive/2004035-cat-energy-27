@@ -1,6 +1,10 @@
 @import "variable";
 
 @media (max-width: $tablet) {
+  .nojs {
+    margin-bottom: 201px;
+  }
+
   .nojs__main-header-logo {
     margin-right: auto;
   }
@@ -11,9 +15,5 @@
 
   .nojs__main-navigation {
     display: block;
-  }
-
-  .nojs__header {
-    margin-bottom: 201px;
   }
 }
