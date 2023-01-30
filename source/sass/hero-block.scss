@@ -29,7 +29,7 @@
 }
 
 .hero-block__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -59,7 +59,7 @@
 }
 
 .hero-block__intro {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -145,6 +145,19 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-block-background-image-desktop@2x.webp");
     }
+  }
+
+  @media (min-width: 1441px) {
+    display: none;
+    // display: block;
+    // background-image: linear-gradient(rgba(105, 183, 56, 85%), rgba(105, 183, 56, 85%)), url("../img/hero-block-background-image-desktop.webp");
+    // background-repeat: no-repeat;
+    // min-width: 100% - 50%;
+    // min-height: 694px;
+    // background-size: cover;
+    // z-index: -1;
+    // // right: none;
+    // left: 50%;
   }
 }
 

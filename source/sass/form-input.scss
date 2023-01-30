@@ -1,7 +1,7 @@
 @import "variable";
 
 .form-input {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -18,6 +18,13 @@
 
   &::placeholder {
     text-transform: uppercase;
+    color: $special-dark-grey;
+  }
+
+  &::-moz-placeholder {
+    text-transform: uppercase;
+    color: $special-dark-grey;
+    opacity: 1;
   }
 
   &:hover {

@@ -85,8 +85,8 @@ const sprite = () => {
 const copy = (done) => {
   gulp.src([
     'source/fonts/**',
-    'source/*ico',
-    './*.webmanifest'
+    'source/*.ico',
+    'source/*.webmanifest'
   ], {
     base: 'source'
   })
@@ -139,8 +139,8 @@ const reload = (done) => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('sourse/js/*.js', gulp.series(sctipts))
-  gulp.watch('source/*.html').on(html, reload);
+  gulp.watch('sourse/js/*.js', gulp.series(sctipts));
+  gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
 // gulp.task('build', gulp.series(clean, copy, gulp.parallel(styles, svg, sprite, sctipts, html), cleanCssMap))

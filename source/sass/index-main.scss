@@ -1,0 +1,32 @@
+@media (min-width: 1441px) {
+  .index-main {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background-image: url("../img/hero-block-background-image-desktop.webp");
+      background-repeat: no-repeat;
+      min-width: 50%;
+      min-height: 694px;
+      background-size: cover;
+      z-index: -2;
+      top: -7.8%;
+      left: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -7.8%;
+      left: 50%;
+      min-width: 50%;
+      min-height: 694px;
+      background-color: rgba(104, 183, 56, 0.85);
+      background-size: cover;
+      background-position: bottom right;
+      z-index: -1;
+    }
+  }
+}
