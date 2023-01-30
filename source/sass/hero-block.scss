@@ -11,9 +11,11 @@
   @media (min-width: $tablet) {
     width: 540px;
     margin: 0 auto;
-    align-items: start;
+    align-items: flex-start;
     position: relative;
     padding-bottom: 506px;
+    padding-top: 46px;
+    padding-left: 10px;
   }
 
   @media (min-width: $desktop) {

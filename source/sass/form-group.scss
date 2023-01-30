@@ -1,4 +1,12 @@
+@import "variable";
+
 .form-group {
   display: flex;
   align-items: center;
+
+  @media (min-width: $desktop) {
+    &--end {
+      margin-left: 69px;
+    }
+  }
 }

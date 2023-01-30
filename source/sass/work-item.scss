@@ -12,14 +12,18 @@
   @media (min-width: $tablet) {
     min-height: 280px;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     justify-items: baseline;
     gap: 31px;
-    padding-top: 40px;
+    padding-top: 34px;
 
     &:not(:last-child) {
       margin: 0;
     }
+
+    // &:nth-child(3) {
+    //   padding: 0;
+    // }
 
     position: relative;
     counter-increment: num;
@@ -48,19 +52,19 @@
   background-repeat: no-repeat;
 
   &--leaf {
-    background-image: url("../../img/icon-leaf.svg");
+    background-image: url("../img/icon-leaf.svg");
   }
 
   &--powder {
-    background-image: url("../../img/icon-powder.svg");
+    background-image: url("../img/icon-powder.svg");
   }
 
   &--eat {
-    background-image: url("../../img/icon-eat.svg");
+    background-image: url("../img/icon-eat.svg");
   }
 
   &--scales {
-    background-image: url("../../img/icon-scales.svg");
+    background-image: url("../img/icon-scales.svg");
   }
 
   @media (min-width: $tablet) {

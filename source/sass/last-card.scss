@@ -4,13 +4,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px 0;
+  padding: 17px 0;
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet) {
     // justify-content: space-between;
-    justify-content: start;
+    justify-content: flex-start;
     padding: 52px 38px 39px 38px;
     border-top: none;
     border-bottom: none;
@@ -49,7 +49,7 @@
   @media (min-width: $tablet) {
     width: 60px;
     height: 60px;
-    margin-bottom: 49px;
+    margin-bottom: 43px;
   }
 }
 
@@ -69,7 +69,7 @@
     line-height: 22px;
     text-align: center;
     width: 134px;
-    margin-bottom: 23px;
+    margin-bottom: 22px;
   }
 }
 
@@ -84,10 +84,11 @@
   margin-bottom: 21px;
 
   @media (min-width: $tablet) {
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 18px;
     text-align: center;
-    margin-bottom: 87px;
+    margin-bottom: 88px;
+    width: 165px;
   }
 }
 
